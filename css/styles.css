@@ -1,6 +1,6 @@
-/* Estilos para la barra de navegación */
+/* Estilos para el body y el header */
 body {
-    background: linear-gradient(rgb(5, 7, 12,  50%), rgba(5, 7, 12, 50%)), url(../img/bg-body.png);
+    background: linear-gradient(rgb(5, 7, 12, 50%), rgba(5, 7, 12, 50%)), url(../img/bg-body.png);
     background-size: cover; 
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -25,6 +25,10 @@ header {
     padding: 10px;
 }
 
+/* Estilos para la barra de navegación */
+nav {
+    display: flex;
+}
 
 nav ul {
     list-style: none;
@@ -41,23 +45,61 @@ nav a {
     font-size: 1.2em;
 }
 
-.catalog-button a {
+/* Estilos para el botón de catálogo en dispositivos de escritorio y móviles */
+.catalog-button {
+    margin-top: 10px; /* Agrega un margen superior para separar el botón de catálogo */
     background-color: #40B554;
     color: #fff;
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 10px;
+    display: inline-block; /* Asegúrate de que el botón ocupe solo el ancho necesario */
+    border: none; /* Quita el borde del botón */
+    cursor: pointer;
 }
 
-/* Estilos del infobox */
+/* Estilos para el botón de catálogo en dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .catalog-button {
+        display: block; /* Asegúrate de que el botón ocupe todo el ancho en dispositivos móviles */
+        margin-top: 0; /* Restablecer el margen superior */
+    }
+}
 
+/* Estilos para el menú de hamburguesa en dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        display: none; /* Ocultar por defecto en dispositivos móviles */
+    }
 
+    nav.active {
+        display: flex; /* Mostrar el menú cuando la clase "active" está presente */
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px; /* Ajustar el margen entre las opciones del menú */ 
+        text-align: center;
+    }
+}
+
+/* Estilos específicos para dispositivos de escritorio */
+@media only screen and (min-width: 601px) {
+    .menu-icon {
+        display: none; /* Ocultar el icono del menú en dispositivos de escritorio */
+    }
+}
+
+/* Estilos para el infoBox */
 #infoBox {
-    background-color: rgba(64, 181, 84, 0.65); /* Color con transparencia */
+    background-color: rgba(64, 181, 84, 0.65);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    margin: 5em 20em 0 20em;
+    margin: 20px auto; /* Auto para centrar horizontalmente, y margen superior e inferior */
+    max-width: 600px; /* Ancho máximo del cuadro */
 }
 
 #infoBox h1 {
@@ -79,4 +121,12 @@ nav a {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* Estilos específicos para dispositivos móviles usando media queries */
+@media only screen and (max-width: 600px) {
+    #infoBox {
+        margin: 10px; /* Márgenes más pequeños en dispositivos móviles */
+        position: relative; /* Ajuste de posición */
+    }
 }

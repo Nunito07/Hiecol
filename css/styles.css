@@ -1,0 +1,82 @@
+/* Estilos para la barra de navegación */
+body {
+    background: linear-gradient(rgb(5, 7, 12,  50%), rgba(5, 7, 12, 50%)), url(../img/bg-body.png);
+    background-size: cover; 
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+header {
+    background-color: rgba(198, 194, 194, 0.5);
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#logoHiecol {
+    width: 100px;
+    height: auto;
+    padding: 10px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #40B554;
+    font-size: 1.2em;
+}
+
+.catalog-button a {
+    background-color: #40B554;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+/* Estilos del infobox */
+
+
+#infoBox {
+    background-color: rgba(64, 181, 84, 0.65); /* Color con transparencia */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5em 20em 0 20em;
+}
+
+#infoBox h1 {
+    font-size: 24px;
+    color: #fff;
+}
+
+#infoBox p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#infoBox button {
+    background-color: #fff;
+    color: #40B554;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

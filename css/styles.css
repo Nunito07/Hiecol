@@ -1,4 +1,3 @@
-/* Estilos para el body y el header */
 body {
     background: linear-gradient(rgb(5, 7, 12, 50%), rgba(5, 7, 12, 50%)), url(../img/bg-body.png);
     background-size: cover; 
@@ -6,6 +5,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
+}
+
+body.menu-active {
+    overflow: hidden;
 }
 
 header {
@@ -25,15 +28,17 @@ header {
     padding: 10px;
 }
 
-/* Estilos para la barra de navegación */
 nav {
     display: flex;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
+@media only screen and (min-width: 601px) {
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
 }
+
 
 nav ul li {
     margin-right: 20px;
@@ -45,61 +50,72 @@ nav a {
     font-size: 1.2em;
 }
 
-/* Estilos para el botón de catálogo en dispositivos de escritorio y móviles */
 .catalog-button {
-    margin-top: 10px; /* Agrega un margen superior para separar el botón de catálogo */
+    margin-top: 10px;
     background-color: #40B554;
     color: #fff;
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 10px;
-    display: inline-block; /* Asegúrate de que el botón ocupe solo el ancho necesario */
-    border: none; /* Quita el borde del botón */
+    display: inline-block;
+    border: none;
     cursor: pointer;
 }
 
-/* Estilos para el botón de catálogo en dispositivos móviles */
 @media only screen and (max-width: 600px) {
     .catalog-button {
-        display: block; /* Asegúrate de que el botón ocupe todo el ancho en dispositivos móviles */
-        margin-top: 0; /* Restablecer el margen superior */
+        display: block;
+        margin-top: 0;
     }
-}
 
-/* Estilos para el menú de hamburguesa en dispositivos móviles */
-@media only screen and (max-width: 600px) {
     nav {
-        flex-direction: column;
-        align-items: center;
-        display: none; /* Ocultar por defecto en dispositivos móviles */
+            flex-direction: column;
+            align-items: center;
+            display: none;
+            text-align: center; /* Alinea el texto al centro */
+            position: relative; /* Añade posición relativa para el contenedor del menú */
     }
 
+    nav ul {
+        list-style: none;
+    }
+    
     nav.active {
-        display: flex; /* Mostrar el menú cuando la clase "active" está presente */
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #bccdbf;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        width: 90%;
+        height: 90%;
+        z-index: 1000;
     }
 
     nav li {
         margin-right: 0;
-        margin-bottom: 10px; /* Ajustar el margen entre las opciones del menú */ 
+        margin-bottom: 10px;
         text-align: center;
     }
 }
 
-/* Estilos específicos para dispositivos de escritorio */
 @media only screen and (min-width: 601px) {
     .menu-icon {
-        display: none; /* Ocultar el icono del menú en dispositivos de escritorio */
+        display: none;
     }
 }
 
-/* Estilos para el infoBox */
 #infoBox {
     background-color: rgba(64, 181, 84, 0.65);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    margin: 20px auto; /* Auto para centrar horizontalmente, y margen superior e inferior */
-    max-width: 600px; /* Ancho máximo del cuadro */
+    margin: 20px auto;
+    max-width: 600px;
 }
 
 #infoBox h1 {
@@ -123,10 +139,45 @@ nav a {
     cursor: pointer;
 }
 
-/* Estilos específicos para dispositivos móviles usando media queries */
 @media only screen and (max-width: 600px) {
     #infoBox {
-        margin: 10px; /* Márgenes más pequeños en dispositivos móviles */
-        position: relative; /* Ajuste de posición */
+        margin: 10px;
+        position: relative;
     }
 }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+
+body.menu-active .overlay {
+    display: block;
+}
+
+/* Agrega estilos para el botón de cierre */
+#close-icon {
+    color: #000;
+    font-size: 1.5em;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+#close-icon:hover {
+    color: #333; /* Cambia el color al pasar el mouse para indicar que es interactivo */
+}
+
+@media only screen and (min-width: 601px) {
+    #close-icon {
+        display: none; /* Oculta el botón de cierre en dispositivos de escritorio */
+    }
+}
+

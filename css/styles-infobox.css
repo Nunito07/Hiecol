@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+#infoBox {
+    background-color: rgba(64, 181, 84, 0.65);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 700px;
+    max-height: 1200px;
+}
+
+#infoBox h1 {
+    color: #FFFFFF;
+    font-family: "Nunito", Sans-serif;
+    font-size: 54px;
+    font-weight: 900;
+    text-transform: none;
+    line-height: 1em;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+}
+
+#infoBox p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#infoBox button {
+    background-color: #fff;
+    color: #40B554;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

@@ -1,144 +1,154 @@
-body {
-    background: linear-gradient(rgb(5, 7, 12, 50%), rgba(5, 7, 12, 50%)), url(../img/bg-body.png);
-    background-size: cover; 
-    font-family: 'Arial', sans-serif;
+:root{
+    --gris: rgba(198, 194, 194, 0.5);
+}
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
 }
 
-body.menu-active {
-    overflow: hidden;
+body {
+    background: linear-gradient(rgb(5, 7, 12, 50%), rgba(5, 7, 12, 50%)), url(../img/bg-body.png);
+    background-size: cover; 
+    font-family: 'Arial', sans-serif;
 }
 
-header {
-    background-color: rgba(198, 194, 194, 0.5);
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+main{
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    height: 100%;
+    background-color: #40B554;
+}
+
+header{
+    background-color: var(--gris);
+    box-shadow: 1px 1px 5px 0px var(--gris);
     border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-right-radius:  50px;
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
 
-#logoHiecol {
+.logo{
+    display: inline-block;
     width: 100px;
     height: auto;
-    padding: 10px;
+    margin-left: 15px;
 }
 
-nav {
-    display: flex;
+nav{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .5s ease-out;
 }
 
-@media only screen and (min-width: 601px) {
-    nav ul {
-        list-style: none;
-        display: flex;
-    }
+.menu a{
+    display: block;
+    padding: 30px;
+    color: white;
 }
 
-
-nav ul li {
-    margin-right: 20px;
+.menu a:hover{
+    background-color: #07390f;
 }
 
-nav a {
-    text-decoration: none;
-    color: #40B554;
-    font-size: 1.2em;
-}
-
-.catalog-button {
-    margin-top: 10px;
-    background-color: #40B554;
-    color: #fff;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 10px;
-    display: inline-block;
-    border: none;
+.hamb{
     cursor: pointer;
+    float: right;
+    padding: 40px 20px;
 }
 
-@media only screen and (max-width: 600px) {
-    .catalog-button {
-        display: block;
-        margin-top: 0;
-    }
-
-    nav {
-            flex-direction: column;
-            align-items: center;
-            display: none;
-            text-align: center; /* Alinea el texto al centro */
-            position: relative; /* Añade posición relativa para el contenedor del menú */
-    }
-
-    nav ul {
-        list-style: none;
-    }
-    
-    nav.active {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #bccdbf;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        width: 90%;
-        height: 90%;
-        z-index: 1000;
-    }
-
-    nav li {
-        margin-right: 0;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-
-    .inicio-opt{
-        width: 100%;
-        margin: 3em 0 3em 0;
-        font-size: 1.5em;
-    }
-
-    .nosotros-opt{
-        width: 100%;
-        margin: 3em 0 3em 0;
-        font-size: 1.5em;
-    }
-
-    .test-opt{
-        width: 100%;
-        margin: 3em 0 3em 0;
-        font-size: 1.5em;
-    }
-
-    .contacto-opt{
-        width: 100%;
-        margin: 3em 0 3em 0;
-        font-size: 1.5em;
-    }
-
-    /*.inicio-opt{
-        width: 100%;
-        margin: 3em 0 3em 0;
-        font-size: 1.5em;
-    }*/
+.hamb-line{
+    background: #40B554;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
 }
 
-@media only screen and (min-width: 601px) {
-    .menu-icon {
+.hamb-line::before,
+.hamb-line::after{
+    background: #40B554;
+    content: ' ';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.hamb-line::before{
+    top: 5px;
+}
+
+.hamb-line::after{
+    top: -5px;
+}
+
+.side-menu{
+    display: none;
+}
+
+.side-menu:checked  ~ nav{
+    max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line{
+    background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after{
+    transform: rotate(45deg);
+    top: 0;
+}
+
+@media (min-width: 768px)
+{
+    .nav
+    {
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+    }
+
+    .menu li
+    {
+        float: left;
+    }
+
+    .menu a:hover
+    {
+        background-color: transparent;
+        color: var(--green-light)
+    }
+
+    .hamb
+    {
         display: none;
     }
 }
 
+/*infoBox styles*/
 #infoBox {
     background-color: rgba(64, 181, 84, 0.65);
     padding: 20px;
@@ -167,47 +177,5 @@ nav a {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-@media only screen and (max-width: 600px) {
-    #infoBox {
-        margin: 10px;
-        position: relative;
-    }
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: none;
-    z-index: 999;
-}
-
-body.menu-active .overlay {
-    display: block;
-}
-
-/* Agrega estilos para el botón de cierre */
-#close-icon {
-    color: #000;
-    font-size: 1.5em;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-}
-
-#close-icon:hover {
-    color: #333; /* Cambia el color al pasar el mouse para indicar que es interactivo */
-}
-
-@media only screen and (min-width: 601px) {
-    #close-icon {
-        display: none; /* Oculta el botón de cierre en dispositivos de escritorio */
-    }
 }
 

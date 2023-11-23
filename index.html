@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/jpg" href="/img/logo-hiecol.png"/>
     <!-- Otros elementos del encabezado -->
     <title>Tu Sitio Web</title>
 </head>
-<body>
-    <!-- Contenido del cuerpo -->
 
+<body>
     <header>
-        <div><img  id="logoHiecol" src="img/logo-hiecol.png" alt="Hiecol Logo"></div>
-        <div class="menu-icon">&#9776;</div>
-        <nav>
-            <ul>
-                <div id="close-icon">&#10006;</div>
-                <div class="inicio-opt"><li><a href="#inicio">Inicio</a></li></div>
-                <div class="nosotros-opt"> <li><a href="#nosotros">Nosotros</a></li></div>
-                <div class="test-opt"></div><li><a href="#testimonios">Testimonios</a></li></div>
-                <div class="contacto-opt"></div><li><a href="#contacto">Contacto</a></li></div>
-                <div class="catalogo-opt"></div><li><a class="catalog-button" href="#catalogo">Catálogo</a></li></div> <!-- Agrega este elemento al menú -->
+        <a href="#" ><img class="logo" src="/img/logo-hiecol.png" alt="Logo Hiecol"></a>
+        <input type="checkbox" id="side-menu" class="side-menu">
+        <label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Testimonios</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Catálogo</a></li>
             </ul>
         </nav>
-        <!-- No necesitas el div adicional para el botón del catálogo aquí -->
     </header>
+    <main>
+        <div id="infoBox">
+            <h1>Empaques, amarres y protección para el Agro</h1>
+            <p>¿Cansado de buscar la solución de empaque adecuada para sus granos? ¡No busque más! Ofrecemos la respuesta
+                para todas sus necesidades de reenvasado. Nuestras bolsas asequibles y de primer nivel están diseñadas para
+                mantener sus granos seguros y protegidos.</p>
+            <button>Regístrate aquí</button>
+        </div>
 
-    <div id="infoBox">
-        <h1>Empaques, amarres y protección para el Agro</h1>
-        <p>¿Cansado de buscar la solución de empaque adecuada para sus granos? ¡No busque más! Ofrecemos la respuesta para todas sus necesidades de reenvasado. Nuestras bolsas asequibles y de primer nivel están diseñadas para mantener sus granos seguros y protegidos.</p>
-        <button>Regístrate aquí</button>
-    </div>
+    </main>
 
-    <!-- Resto del contenido de la página -->
-    
     <script src="js/script.js" defer></script>
 </body>
+
 </html>

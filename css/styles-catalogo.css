@@ -1,0 +1,5 @@
+.card IMG{
+    max-width: 100px;
+    position: relative;
+    align-items: center;
+}

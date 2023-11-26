@@ -9,9 +9,31 @@
 }
 
 body {
-    background: linear-gradient(rgb(5, 7, 12, 50%), rgba(5, 7, 12, 50%)), url(../img/bg-body.png);
-    background-size: cover; 
     font-family: 'Arial', sans-serif;
+}
+
+#bg-container{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease;
+}
+
+/*estilos específicos para cada imagen de fondo */
+.bg-1 {
+    background-image: linear-gradient(rgb(5, 7, 12, 50%), rgba(5, 7, 12, 50%)), url(../img/lechuga-hidroponica.jpg);
+}
+
+.bg-2 {
+    background-image: linear-gradient(rgb(5, 7, 12, 50%), rgba(5, 7, 12, 50%)), url(../img/woman-taking-out-plastic-bag.jpg);
+}
+
+.bg-3 {
+    background-image: linear-gradient(rgb(5, 7, 12, 50%), rgba(5, 7, 12, 50%)), url(../img/plastic-free-storage.jpg);
+}
+
+.bg-4 {
+    background-image: linear-gradient(rgb(5, 7, 12, 50%), rgba(5, 7, 12, 50%)), url(../img/bags-for-cereals.jpg);
 }
 
 main{
@@ -25,25 +47,26 @@ a{
 ul{
     list-style: none;
     height: 100%;
-    background-color: #40B554;
+    background-color: #FFFFFF;
 }
 
 header{
-    background-color: var(--gris);
+    background-color: white;
     box-shadow: 1px 1px 5px 0px var(--gris);
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius:  50px;
-    position: sticky;
+    position: relative;
     top: 0;
-    margin-bottom: 20px;
     width: 100%;
 }
 
 .logo{
     display: inline-block;
-    width: 100px;
+    width: 170px;
     height: auto;
     margin-left: 15px;
+}
+
+.logo img{
+    max-width: 100%;
 }
 
 nav{
@@ -52,13 +75,14 @@ nav{
     position: fixed;
     overflow: hidden;
     max-height: 0;
-    transition: max-height .5s ease-out;
+    transition: all .5s ease-out;
+    background: #FFFFFF;
 }
 
 .menu a{
     display: block;
     padding: 30px;
-    color: white;
+    color: #40B554;
 }
 
 .menu a:hover{
@@ -69,6 +93,7 @@ nav{
     cursor: pointer;
     float: right;
     padding: 40px 20px;
+    margin-top: 20px;
 }
 
 .hamb-line{
@@ -124,12 +149,17 @@ nav{
 {
     .nav
     {
+        margin-top: 12px;
         max-height: none;
         top: 0;
         position: relative;
         float: right;
         width: fit-content;
         background-color: transparent;
+    }
+
+    .logo{
+        max-width: 200px;
     }
 
     .menu li

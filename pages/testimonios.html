@@ -4,25 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/styles-infobox.css">
-    <link rel="icon" type="image/jpg" href="/img/logo-hiecol.png" />
-    <!-- Otros elementos del encabezado -->
-    <title>Tu Sitio Web</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles-infobox.css">
+    <link rel="icon" type="image/jpg" href="../img/logo-hiecol.png" />
+
+    <title>Hiecol</title>
 </head>
 
-<body>
+<body id="bg-container">
     <header>
-        <a href="#"><img class="logo" src="/img/logo-hiecol.png" alt="Logo Hiecol"></a>
+        <figure class="logo" ><a href="index.html"><img src="/img/logo-hiecol.png" alt="Logo Hiecol"></a></figure>
         <input type="checkbox" id="side-menu" class="side-menu">
         <label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
         <nav class="nav">
             <ul class="menu">
-                <li><a href="#section-inicio">Inicio</a></li>
-                <li><a href="#section-nosotros">Nosotros</a></li>
-                <li><a href="#section-test">Testimonios</a></li>
-                <li><a href="#section-contacto">Contacto</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="/pages/nosotros.html">Nosotros</a></li>
                 <li><a href="/pages/catalogo.html">Catálogo</a></li>
+                <li><a href="/pages/contacto.html">Contacto</a></li>
+                <li><a href="/pages/testimonios.html">Testimonios</a></li>
             </ul>
         </nav>
     </header>
@@ -38,46 +38,11 @@
                 <button>Regístrate aquí</button>
             </div>
         </section>
-        
-        <section class="section-nosotros" id="section-nosotros">
-            <div id="infoBox">
-                <h1>Nosotros</h1>
-                <p>¿Cansado de buscar la solución de empaque adecuada para sus granos? ¡No busque más! Ofrecemos la
-                    respuesta
-                    para todas sus necesidades de reenvasado. Nuestras bolsas asequibles y de primer nivel están
-                    diseñadas para
-                    mantener sus granos seguros y protegidos.</p>
-                <button>Regístrate aquí</button>
-            </div>
-        </section>
-        
-        <section class="section-test" id="section-test">
-            <div id="infoBox">
-                <h1>Testimonios</h1>
-                <p>¿Cansado de buscar la solución de empaque adecuada para sus granos? ¡No busque más! Ofrecemos la
-                    respuesta
-                    para todas sus necesidades de reenvasado. Nuestras bolsas asequibles y de primer nivel están
-                    diseñadas para
-                    mantener sus granos seguros y protegidos.</p>
-                <button>Regístrate aquí</button>
-            </div>
-        </section>
-        
-        <section class="section-contacto" id="section-contacto">
-            <div id="infoBox">
-                <h1>Contacto</h1>
-                <p>¿Cansado de buscar la solución de empaque adecuada para sus granos? ¡No busque más! Ofrecemos la
-                    respuesta
-                    para todas sus necesidades de reenvasado. Nuestras bolsas asequibles y de primer nivel están
-                    diseñadas para
-                    mantener sus granos seguros y protegidos.</p>
-                <button>Regístrate aquí</button>
-            </div>
-        </section>
 
     </main>
 
-    <script src="js/script.js" defer></script>
+    <script src="../js/bg-script.js" defer></script>
+    <script src="../js/bootstrap.min.js" defer></script>
 </body>
 
 </html>

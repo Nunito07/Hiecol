@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+main {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     /* Permite que las cajas se muevan a una nueva línea en pantallas pequeñas */
+ }
+
+ #infoBox1 {
+     background-color: rgba(243, 244, 247, 0.85);
+     padding: 20px;
+     border-radius: 10px;
+     text-align: center;
+     max-width: 568px;
+     width: 100%;
+ }
+
+ #infoBox2 {
+    background-color: rgba(64, 181, 84, 0.65);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 568px;
+    width: 100%;
+}
+
+ /* Restaurado el estilo para #infoBox p */
+ #infoBox p {
+     font-size: 16px;
+     color: #ffffff;
+     margin-bottom: 20px;
+ }
+
+ #infoBox1 hr{
+    border-width: 1.5px;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 20px;
+    opacity: 1;
+ }
+
+ /* Restaurado el estilo para #infoBox button */
+ #infoBox button {
+     background-color: #fff;
+     color: #40B554;
+     padding: 10px 20px;
+     font-size: 18px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+ #escribenos{
+    color: #40B554;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 5px;
+ }
+
+ #fa-map-marker{
+    font-size: 30px;
+    margin-top: 20px;
+    color: #40B554;
+ }
+
+ #fa-fa-envelope-o{
+    font-size: 30px;
+    margin-top: 12px;
+    color: #40B554;
+ }
+
+ #fa-fa-whatsapp{
+    font-size: 30px;
+    margin-top: 16px;
+    color: #40B554;
+ }
+
+ .locationTitle{
+    font-size: 1.5em;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: start;
+    font-weight: 600;
+ }
+
+ .locationText{
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: start;
+    color: #595959;
+ }
+

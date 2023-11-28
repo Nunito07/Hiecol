@@ -4,21 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/styles-infobox.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles-infobox-contacto.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/jpg" href="/img/logo-hiecol.png" />
-    <!-- Otros elementos del encabezado -->
-    <title>Tu Sitio Web</title>
+    <title>Hiecol</title>
 </head>
 
 <body id="bg-container">
     <header>
-        <figure class="logo" ><a href="index.html"><img src="/img/logo-hiecol.png" alt="Logo Hiecol"></a></figure>
+        <figure class="logo"><a href="index.html"><img src="/img/logo-hiecol.png" alt="Logo Hiecol"></a></figure>
         <input type="checkbox" id="side-menu" class="side-menu">
         <label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
         <nav class="nav">
             <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="../index.html">Inicio</a></li>
                 <li><a href="/pages/nosotros.html">Nosotros</a></li>
                 <li><a href="/pages/catalogo.html">Catálogo</a></li>
                 <li><a href="/pages/contacto.html">Contacto</a></li>
@@ -27,362 +29,66 @@
         </nav>
     </header>
     <main>
-        <section class="section-inicio" id="section-inicio">
-            <div id="infoBox">
-                <div class="wrapper-main center main-contacto-excala clear-fix">
-                    <article class="wrapper-main-xs center">
-                        <h1>Contacto</h1>
-                        <p>En Grupo Excala nos gusta que estés enterado de todas las novedades que tenemos para tu
-                            empresa. Déjanos tus datos y descubre nuestros últimos lanzamientos y productos.</p>
-                    </article>
-
-                    <div class="form-excala">
-
-                        <div class="wpcf7 js" id="wpcf7-f662-o1" lang="es-ES" dir="ltr">
-                            <div class="screen-reader-response">
-                                <p role="status" aria-live="polite" aria-atomic="true"></p>
-                                <ul></ul>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <div class="col" id="infoBox1">
+                        <h1 id="escribenos">Escríbenos</h1>
+                        <p>
+                            <span>Regístrate y conoce los beneficios de usar nuestros empaques</span>
+                        </p>
+                        <hr>
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa fa-map-marker" aria-hidden="true" id="fa-map-marker"></i>
                             </div>
-                            <form action="/contacto/#wpcf7-f662-o1" method="post" class="wpcf7-form init"
-                                aria-label="Formulario de contacto" novalidate="novalidate" data-status="init">
-                                <div style="display: none;">
-                                    <input type="hidden" name="_wpcf7" value="662">
-                                    <input type="hidden" name="_wpcf7_version" value="5.8">
-                                    <input type="hidden" name="_wpcf7_locale" value="es_ES">
-                                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f662-o1">
-                                    <input type="hidden" name="_wpcf7_container_post" value="0">
-                                    <input type="hidden" name="_wpcf7_posted_data_hash" value="">
-                                </div>
-                                <div class="row row-xs">
-                                    <div class="col-12 col-sm-6 col-lg-6 col-xl-6">
-                                        <fieldset>
-                                            <legend>Nombre</legend>
-                                            <div class="form-field"><span class="wpcf7-form-control-wrap"
-                                                    data-name="nombre"><input size="40"
-                                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                        aria-required="true" aria-invalid="false"
-                                                        placeholder="Escribe tu nombre" value="" type="text"
-                                                        name="nombre"></span></div>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-lg-6 col-xl-6">
-                                        <fieldset>
-                                            <legend>Celular</legend>
-                                            <div class="form-field"><span class="wpcf7-form-control-wrap"
-                                                    data-name="celular"><input size="40" maxlength="10" minlength="7"
-                                                        class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel"
-                                                        aria-required="true" aria-invalid="false"
-                                                        placeholder="Número de celular" value="" type="tel"
-                                                        name="celular"></span></div>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-lg-6 col-xl-6">
-                                        <fieldset>
-                                            <legend>Compañía</legend>
-                                            <div class="form-field"><span class="wpcf7-form-control-wrap"
-                                                    data-name="compania"><input size="40"
-                                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                        aria-required="true" aria-invalid="false"
-                                                        placeholder="Nombre de empresa" value="" type="text"
-                                                        name="compania"></span></div>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-lg-6 col-xl-6">
-                                        <fieldset>
-                                            <legend>Email</legend>
-                                            <div class="form-field"><span class="wpcf7-form-control-wrap"
-                                                    data-name="email"><input size="40"
-                                                        class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
-                                                        aria-required="true" aria-invalid="false"
-                                                        placeholder="Escribe tu email" value="" type="email"
-                                                        name="email"></span></div>
-                                        </fieldset>
-                                    </div>
-
-                                    <div class="col-12 col-sm-12 col-lg-12 col-xl-12">
-                                        <fieldset>
-                                            <legend>País</legend>
-                                            <div class="form-field"><span class="wpcf7-form-control-wrap"
-                                                    data-name="paises"><select class="wpcf7-form-control wpcf7-select"
-                                                        aria-invalid="false" name="paises">
-                                                        <option value="Colombia">Colombia</option>
-                                                        <option value="Afganistán">Afganistán</option>
-                                                        <option value="Albania">Albania</option>
-                                                        <option value="Alemania">Alemania</option>
-                                                        <option value="Andorra">Andorra</option>
-                                                        <option value="Angola">Angola</option>
-                                                        <option value="Antigua y Barbuda">Antigua y Barbuda</option>
-                                                        <option value="Arabia Saudita">Arabia Saudita</option>
-                                                        <option value="Argelia">Argelia</option>
-                                                        <option value="Argentina">Argentina</option>
-                                                        <option value="Armenia">Armenia</option>
-                                                        <option value="Australia">Australia</option>
-                                                        <option value="Austria">Austria</option>
-                                                        <option value="Azerbaiyán">Azerbaiyán</option>
-                                                        <option value="Bahamas">Bahamas</option>
-                                                        <option value="Bangladés">Bangladés</option>
-                                                        <option value="Barbados">Barbados</option>
-                                                        <option value="Baréin">Baréin</option>
-                                                        <option value="Bélgica">Bélgica</option>
-                                                        <option value="Belice">Belice</option>
-                                                        <option value="Benín">Benín</option>
-                                                        <option value="Bielorrusia">Bielorrusia</option>
-                                                        <option value="Birmania">Birmania</option>
-                                                        <option value="Bolivia">Bolivia</option>
-                                                        <option value="Bosnia y Herzegovina">Bosnia y Herzegovina
-                                                        </option>
-                                                        <option value="Botsuana">Botsuana</option>
-                                                        <option value="Brasil">Brasil</option>
-                                                        <option value="Brunéi">Brunéi</option>
-                                                        <option value="Bulgaria">Bulgaria</option>
-                                                        <option value="Burkina Faso">Burkina Faso</option>
-                                                        <option value="Burundi">Burundi</option>
-                                                        <option value="Bután">Bután</option>
-                                                        <option value="Cabo Verde">Cabo Verde</option>
-                                                        <option value="Camboya">Camboya</option>
-                                                        <option value="Camerún">Camerún</option>
-                                                        <option value="Canadá">Canadá</option>
-                                                        <option value="Catar">Catar</option>
-                                                        <option value="Chad">Chad</option>
-                                                        <option value="Chile">Chile</option>
-                                                        <option value="China">China</option>
-                                                        <option value="Chipre">Chipre</option>
-                                                        <option value="Ciudad del Vaticano">Ciudad del Vaticano</option>
-                                                        <option value="Colombia">Colombia</option>
-                                                        <option value="Comoras">Comoras</option>
-                                                        <option value="Corea del Norte">Corea del Norte</option>
-                                                        <option value="Corea del Sur">Corea del Sur</option>
-                                                        <option value="Costa de Marfil">Costa de Marfil</option>
-                                                        <option value="Costa Rica">Costa Rica</option>
-                                                        <option value="Croacia">Croacia</option>
-                                                        <option value="Cuba">Cuba</option>
-                                                        <option value="Dinamarca">Dinamarca</option>
-                                                        <option value="Dominica">Dominica</option>
-                                                        <option value="Ecuador">Ecuador</option>
-                                                        <option value="Egipto">Egipto</option>
-                                                        <option value="El Salvador">El Salvador</option>
-                                                        <option value="Emiratos Árabes Unidos">Emiratos Árabes Unidos
-                                                        </option>
-                                                        <option value="Eritrea">Eritrea</option>
-                                                        <option value="Eslovaquia">Eslovaquia</option>
-                                                        <option value="Eslovenia">Eslovenia</option>
-                                                        <option value="España">España</option>
-                                                        <option value="Estados Unidos">Estados Unidos</option>
-                                                        <option value="Estonia">Estonia</option>
-                                                        <option value="Etiopía">Etiopía</option>
-                                                        <option value="Filipinas">Filipinas</option>
-                                                        <option value="Finlandia">Finlandia</option>
-                                                        <option value="Fiyi">Fiyi</option>
-                                                        <option value="Francia">Francia</option>
-                                                        <option value="Gabón">Gabón</option>
-                                                        <option value="Gambia">Gambia</option>
-                                                        <option value="Georgia">Georgia</option>
-                                                        <option value="Ghana">Ghana</option>
-                                                        <option value="Granada">Granada</option>
-                                                        <option value="Grecia">Grecia</option>
-                                                        <option value="Guatemala">Guatemala</option>
-                                                        <option value="Guyana">Guyana</option>
-                                                        <option value="Guinea">Guinea</option>
-                                                        <option value="Guinea ecuatorial">Guinea ecuatorial</option>
-                                                        <option value="Guinea-Bisáu">Guinea-Bisáu</option>
-                                                        <option value="Haití">Haití</option>
-                                                        <option value="Honduras">Honduras</option>
-                                                        <option value="Hungría">Hungría</option>
-                                                        <option value="India">India</option>
-                                                        <option value="Indonesia">Indonesia</option>
-                                                        <option value="Irak">Irak</option>
-                                                        <option value="Irán">Irán</option>
-                                                        <option value="Irlanda">Irlanda</option>
-                                                        <option value="Islandia">Islandia</option>
-                                                        <option value="Islas Marshall">Islas Marshall</option>
-                                                        <option value="Islas Salomón">Islas Salomón</option>
-                                                        <option value="Israel">Israel</option>
-                                                        <option value="Italia">Italia</option>
-                                                        <option value="Jamaica">Jamaica</option>
-                                                        <option value="Japón">Japón</option>
-                                                        <option value="Jordania">Jordania</option>
-                                                        <option value="Kazajistán">Kazajistán</option>
-                                                        <option value="Kenia">Kenia</option>
-                                                        <option value="Kirguistán">Kirguistán</option>
-                                                        <option value="Kiribati">Kiribati</option>
-                                                        <option value="Kuwait">Kuwait</option>
-                                                        <option value="Laos">Laos</option>
-                                                        <option value="Lesoto">Lesoto</option>
-                                                        <option value="Letonia">Letonia</option>
-                                                        <option value="Líbano">Líbano</option>
-                                                        <option value="Liberia">Liberia</option>
-                                                        <option value="Libia">Libia</option>
-                                                        <option value="Liechtenstein">Liechtenstein</option>
-                                                        <option value="Lituania">Lituania</option>
-                                                        <option value="Luxemburgo">Luxemburgo</option>
-                                                        <option value="Macedonia del Norte">Macedonia del Norte</option>
-                                                        <option value="Madagascar">Madagascar</option>
-                                                        <option value="Malasia">Malasia</option>
-                                                        <option value="Malaui">Malaui</option>
-                                                        <option value="Maldivas">Maldivas</option>
-                                                        <option value="Malí">Malí</option>
-                                                        <option value="Malta">Malta</option>
-                                                        <option value="Marruecos">Marruecos</option>
-                                                        <option value="Mauricio">Mauricio</option>
-                                                        <option value="Mauritania">Mauritania</option>
-                                                        <option value="México">México</option>
-                                                        <option value="Micronesia">Micronesia</option>
-                                                        <option value="Moldavia">Moldavia</option>
-                                                        <option value="Mónaco">Mónaco</option>
-                                                        <option value="Mongolia">Mongolia</option>
-                                                        <option value="Montenegro">Montenegro</option>
-                                                        <option value="Mozambique">Mozambique</option>
-                                                        <option value="Namibia">Namibia</option>
-                                                        <option value="Nauru">Nauru</option>
-                                                        <option value="Nepal">Nepal</option>
-                                                        <option value="Nicaragua">Nicaragua</option>
-                                                        <option value="Níger">Níger</option>
-                                                        <option value="Nigeria">Nigeria</option>
-                                                        <option value="Noruega">Noruega</option>
-                                                        <option value="Nueva Zelanda">Nueva Zelanda</option>
-                                                        <option value="Omán">Omán</option>
-                                                        <option value="Países Bajos">Países Bajos</option>
-                                                        <option value="Pakistán">Pakistán</option>
-                                                        <option value="Palaos">Palaos</option>
-                                                        <option value="Panamá">Panamá</option>
-                                                        <option value="Papúa Nueva Guinea">Papúa Nueva Guinea</option>
-                                                        <option value="Paraguay">Paraguay</option>
-                                                        <option value="Perú">Perú</option>
-                                                        <option value="Polonia">Polonia</option>
-                                                        <option value="Portugal">Portugal</option>
-                                                        <option value="Reino Unido">Reino Unido</option>
-                                                        <option value="República Centroafricana">República
-                                                            Centroafricana</option>
-                                                        <option value="República Checa">República Checa</option>
-                                                        <option value="República del Congo">República del Congo</option>
-                                                        <option value="República Democrática del Congo">República
-                                                            Democrática del Congo</option>
-                                                        <option value="República Dominicana">República Dominicana
-                                                        </option>
-                                                        <option value="Ruanda">Ruanda</option>
-                                                        <option value="Rumanía">Rumanía</option>
-                                                        <option value="Rusia">Rusia</option>
-                                                        <option value="Samoa">Samoa</option>
-                                                        <option value="San Cristóbal y Nieves">San Cristóbal y Nieves
-                                                        </option>
-                                                        <option value="San Marino">San Marino</option>
-                                                        <option value="San Vicente y las Granadinas">San Vicente y las
-                                                            Granadinas</option>
-                                                        <option value="Santa Lucía">Santa Lucía</option>
-                                                        <option value="Santo Tomé y Príncipe">Santo Tomé y Príncipe
-                                                        </option>
-                                                        <option value="Senegal">Senegal</option>
-                                                        <option value="Serbia">Serbia</option>
-                                                        <option value="Seychelles">Seychelles</option>
-                                                        <option value="Sierra Leona">Sierra Leona</option>
-                                                        <option value="Singapur">Singapur</option>
-                                                        <option value="Siria">Siria</option>
-                                                        <option value="Somalia">Somalia</option>
-                                                        <option value="Sri Lanka">Sri Lanka</option>
-                                                        <option value="Suazilandia">Suazilandia</option>
-                                                        <option value="Sudáfrica">Sudáfrica</option>
-                                                        <option value="Sudán">Sudán</option>
-                                                        <option value="Sudán del Sur">Sudán del Sur</option>
-                                                        <option value="Suecia">Suecia</option>
-                                                        <option value="Suiza">Suiza</option>
-                                                        <option value="Surinam">Surinam</option>
-                                                        <option value="Tailandia">Tailandia</option>
-                                                        <option value="Tanzania">Tanzania</option>
-                                                        <option value="Tayikistán">Tayikistán</option>
-                                                        <option value="Timor Oriental">Timor Oriental</option>
-                                                        <option value="Togo">Togo</option>
-                                                        <option value="Tonga">Tonga</option>
-                                                        <option value="Trinidad y Tobago">Trinidad y Tobago</option>
-                                                        <option value="Túnez">Túnez</option>
-                                                        <option value="Turkmenistán">Turkmenistán</option>
-                                                        <option value="Turquía">Turquía</option>
-                                                        <option value="Tuvalu">Tuvalu</option>
-                                                        <option value="Ucrania">Ucrania</option>
-                                                        <option value="Uganda">Uganda</option>
-                                                        <option value="Uruguay">Uruguay</option>
-                                                        <option value="Uzbekistán">Uzbekistán</option>
-                                                        <option value="Vanuatu">Vanuatu</option>
-                                                        <option value="Venezuela">Venezuela</option>
-                                                        <option value="Vietnam">Vietnam</option>
-                                                        <option value="Yemen">Yemen</option>
-                                                        <option value="Yibuti">Yibuti</option>
-                                                        <option value="Zambia">Zambia</option>
-                                                        <option value="Zimbabue">Zimbabue</option>
-                                                    </select></span>
-                                            </div>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-12 col-sm-12 col-lg-12 col-xl-12">
-                                        <fieldset>
-                                            <legend>Ciudad</legend>
-                                            <div class="form-field"><span class="wpcf7-form-control-wrap"
-                                                    data-name="ciudad"><input size="40"
-                                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                        aria-required="true" aria-invalid="false"
-                                                        placeholder="Escribe tu ciudad" value="" type="text"
-                                                        name="ciudad"></span></div>
-                                        </fieldset>
-                                    </div>
-
-                                    <div class="col-12 col-sm-12 col-lg-12 col-xl-12">
-                                        <fieldset class="full">
-                                            <legend>Mensaje</legend>
-                                            <div class="form-field"><span class="wpcf7-form-control-wrap"
-                                                    data-name="mensaje"><textarea cols="40" rows="10" maxlength="200"
-                                                        class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
-                                                        aria-required="true" aria-invalid="false"
-                                                        placeholder="Mensaje para el asesor"
-                                                        name="mensaje"></textarea></span></div>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-lg-6 col-xl-6">
-                                        <div class="form-field last-items"><label for="acepto"><span
-                                                    class="wpcf7-form-control-wrap" data-name="acepto"><span
-                                                        class="wpcf7-form-control wpcf7-acceptance"><span
-                                                            class="wpcf7-list-item"><label><input type="checkbox"
-                                                                    name="acepto" value="1" aria-invalid="false"><span
-                                                                    class="wpcf7-list-item-label">Acepto <a
-                                                                        href="/politica-tratamiento-de-datos/"
-                                                                        target="_blank">política de tratamiento de
-                                                                        datos</a></span></label></span></span></span></label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-lg-6 col-xl-6">
-                                        <div id="cf7sr-6562453cb9a36" class="cf7sr-g-recaptcha"
-                                            data-sitekey="6Lc4xxwcAAAAAEgT3Re2-I5-v7RSIDLxmorvNKaU">
-                                            <div style="width: 304px; height: 78px;">
-                                                <div><iframe title="reCAPTCHA" width="304" height="78"
-                                                        role="presentation" name="a-nwbz2sbsoqbg" frameborder="0"
-                                                        scrolling="no"
-                                                        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
-                                                        src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lc4xxwcAAAAAEgT3Re2-I5-v7RSIDLxmorvNKaU&amp;co=aHR0cHM6Ly9ncnVwb2V4Y2FsYS5jb206NDQz&amp;hl=es-419&amp;v=-QbJqHfGOUB8nuVRLvzFLVed&amp;size=normal&amp;cb=fak9dxtkuced"></iframe>
-                                                </div><textarea id="g-recaptcha-response" name="g-recaptcha-response"
-                                                    class="g-recaptcha-response"
-                                                    style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
-                                            </div>
-                                        </div><span class="wpcf7-form-control-wrap cf7sr-recaptcha"
-                                            data-name="cf7sr-recaptcha"><input type="hidden" name="cf7sr-recaptcha"
-                                                value="" class="wpcf7-form-control"></span>
-                                    </div>
-                                    <div
-                                        class="mt-3 col-12 col-sm-6 col-lg-6 col-xl-6 offset-sm-6 offset-lg-6 offset-xl-6">
-                                        <input class="wpcf7-form-control wpcf7-submit has-spinner" id="f-c"
-                                            type="submit" value="Enviar" disabled=""><span class="wpcf7-spinner"></span>
-                                    </div>
-                                </div>
-                                <div class="wpcf7-response-output" aria-hidden="true"></div>
-                            </form>
+                            <div class="col-10">
+                                <h2 class="locationTitle">Ubicación</h2>
+                                <p class="locationText">Avenida panamericana Km 7 Sector los Chilcos Ipiales</p>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa fa-envelope-o" aria-hidden="true" id="fa-fa-envelope-o"></i>
+                            </div>
+                            <div class="col-10">
+                                <h2 class="locationTitle">Correo electrónico</h2>
+                                <p class="locationText"><a href="mailto:japerez@hiecol.com">japerez@hiecol.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa fa-whatsapp" aria-hidden="true" id="fa-fa-whatsapp"></i>
+                            </div>
+                            <div class="col-10">
+                                <h2 class="locationTitle">WhatsApp</h2>
+                                <p class="locationText">(+57) 3135625863</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <button type="submit" target="_blank" onclick="location.href='/pages/contacto.html'">Regístrate
-                    aquí</button>
+                <div class="col" id="infoBox2">
+                </div>
             </div>
-        </section>
+        </div>
 
     </main>
 
-    <script src="js/script.js" defer></script>
+    <script src="../js/script.js" defer></script>
+    <script src="../js/bg-script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-24QpEC+lxLKa1QVaB9R6qKqSIz5CAwtrN5vMP3pFeC4NYYtTUQbEMZLWuoGfRVz"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy8pDlFCK1RxU6jzgAMG8bqE95k9F0BD8i"
+        crossorigin="anonymous"></script>
+    <script src="../js/contacto-script.js"></script>
 </body>
 
 </html>

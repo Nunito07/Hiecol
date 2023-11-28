@@ -59,6 +59,14 @@ main {
     margin-bottom: 5px;
  }
 
+ #registro{
+    color: #FFFFFF;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 5px;
+ }
+
  #fa-map-marker{
     font-size: 30px;
     margin-top: 20px;

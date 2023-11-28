@@ -1,5 +1,11 @@
-.card IMG{
+.card-text{
+    color: #40B554 !important;
+}
+
+.card-header{
+    background-color: #FFFFFF !important;
+}
+
+.card-header img{
     max-width: 100px;
-    position: relative;
-    align-items: center;
 }

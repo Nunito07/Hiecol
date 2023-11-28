@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 #infoBox {
-    background-color: rgba(64, 181, 84, 0.65);
+    background-color: rgba(64, 181, 84, 0.85);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -12,9 +12,9 @@
 
 #infoBox h1 {
     color: #FFFFFF;
-    font-family: "Nunito", Sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 54px;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: none;
     line-height: 1em;
     letter-spacing: -2px;

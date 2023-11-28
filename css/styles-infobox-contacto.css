@@ -40,6 +40,22 @@ main {
     opacity: 1;
  }
 
+ #infoBox2 hr{
+   border-width: 1.5px;
+   font-size: 16px;
+   color: #000000;
+   margin-bottom: 20px;
+   opacity: 1;
+}
+
+#infoBox2 label{
+   font-size: 16px;
+   color: #FFFFFF;
+   font-family: 'Nunito Sans', sans-serif;
+   font-weight: 600;
+
+}
+
  @media (max-width: 514px)
 {
     #infoBox2 {

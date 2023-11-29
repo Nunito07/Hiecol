@@ -72,19 +72,30 @@
                 <div class="col text-start" id="infoBox2">
                     <h1 id="registro">Registrate aquí</h1>
                     <hr>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Nombre completo*</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="Nombre completo">
+                    <div class="from-group mb-3">
+                        <label for="fullName" class="form-label">Nombre completo*</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="Nombre completo">
+                        <div class="alert alert-warning alerta_name" role="alert">
+                            Por favor completa tu nombre.
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Correo electrónico*</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="nombre@ejemplo.com">
+                    <div class="from-group mb-3">
+                        <label for="mail" class="form-label">Correo electrónico*</label>
+                        <input type="email" class="form-control" id="mail" placeholder="nombre@ejemplo.com">
+                        <div class="alert alert-warning alerta_correo" role="alert">
+                            Ingresa un correo válido.
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Escribe tu mensaje para nosotros</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <div class="from-group mb-3">
+                        <label for="msj" class="form-label">Escribe tu mensaje para nosotros</label>
+                        <textarea class="form-control" id="msj" rows="3" placeholder="Cuéntanos en qué podemos ayudarte"></textarea>
+                        <div class="alert alert-warning alerta_msj" role="alert">
+                            Mensaje muy corto, complementa la información
+                        </div>
+                    </div>
+                    <div class="btn-envio text-center">
+                        <a href="#" class="btn btn-light btn-lg" role="button" aria-pressed="true" id="btn-envio"
+                            onclick="enviarCorreo()">Enviar mensaje</a>
                     </div>
                 </div>
             </div>
@@ -92,19 +103,16 @@
 
     </main>
 
-    <script src="../js/script.js" defer></script>
+    <script src="../js/contacto-script.js" defer></script>
     <script src="../js/bg-script.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-        integrity="sha384-24QpEC+lxLKa1QVaB9R6qKqSIz5CAwtrN5vMP3pFeC4NYYtTUQbEMZLWuoGfRVz"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy8pDlFCK1RxU6jzgAMG8bqE95k9F0BD8i"
-        crossorigin="anonymous"></script>
-    <script src="../js/contacto-script.js"></script>
 </body>
 
 </html>

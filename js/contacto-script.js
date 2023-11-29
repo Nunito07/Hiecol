@@ -1,10 +1,40 @@
-// Puedes agregar scripts adicionales aquí si es necesario
+function enviarCorreo() {
+    $(".alerta_correo").css('display', 'none');
+    $(".alerta_name").css('display', 'none');
+    $(".alerta_msj").css('display', 'none');
+    var name = $("#fullName").val();
+    var mail = $("#mail").val();
+    var msj = $("#msj").val();
+    var valido = 1;
+    var vald_mail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-// Ejemplo de manejo de envío de formulario con jQuery
-$(document).ready(function () {
-    $('#contactForm').submit(function (event) {
-        event.preventDefault(); // Evitar el envío del formulario por defecto
-        // Agregar lógica para enviar el formulario a través de AJAX u otro método
-        alert('Formulario enviado');
-    });
-});
+
+    if (!vald_mail.test(mail)) {
+        $(".alerta_correo").css('display', 'block');
+        valido = 0;
+    }
+    if (name.length <= 5) {
+        $(".alerta_name").css('display', 'block');
+        valido = 0;
+        console.log(name);
+    }
+    if (msj.length <= 5) {
+        $(".alerta_msj").css('display', 'block');
+        valido = 0;
+        console.log(msj);
+    }
+    if (valido == 1) {
+        var datos =  '&name' + name + '&correo=' + mail + '&mensaje=' + msj;
+        $.ajax({
+            type: "POST",
+            url: "enviar.php",
+            data: datos,
+            success: function (res) {
+
+            },
+            error: function (res) {
+            }
+        });
+    }
+
+}

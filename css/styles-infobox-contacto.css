@@ -56,6 +56,12 @@ main {
 
 }
 
+#btn-envio{
+   color: #40B554;
+   font-family: 'Nunito Sans', sans-serif;
+   font-weight: 600;
+}
+
  @media (max-width: 514px)
 {
     #infoBox2 {
@@ -109,5 +115,9 @@ main {
     font-family: 'Nunito Sans', sans-serif;
     text-align: start;
     color: #595959;
+ }
+
+ .alert{
+   display: none;
  }
 

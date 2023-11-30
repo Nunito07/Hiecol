@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/styles-catalogo.css">
-    <link rel="stylesheet" href="../css/styles-infobox.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="icon" type="image/jpg" href="/img/logo-hiecol.png" />
     <title>Hiecol</title>
@@ -23,38 +22,82 @@
                 <li><a href="/pages/nosotros.html">Nosotros</a></li>
                 <li><a href="#section-catalogo">Catálogo</a></li>
                 <li><a href="/pages/contacto.html">Contacto</a></li>
-                <li><a href="/pages/testimonios.html">Testimonios</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="bg-main">
         <section class="section-contacto" id="section-catalogo">
             <div id="infoBox">
-                <div class="row">
-                    <div class="col-sm-6 mb-3 mb-sm-0">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-header">
-                                <img src="/img/productos/malla-cuadrada-mp.png" class="text-center" alt="...">
+                <section class="contenido">
+                    <div class="mostrador" id="mostrador">
+                        <div class="fila">
+                            <div class="item" id="producto1">
+                                <div class="contenedor-foto">
+                                    <img id="imagenItem" src="../img/productos/2.png" alt="">
+                                </div>
+                                <p class="descripcion" id="#">NIKE RUNNING  </p>
+                                <span class="precio">$ 1.800</span>
+                                <p id="descripcionDetallada"></p>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#seleccion" onclick="cargar(this)" id="btn-description">
+                                    Descripción
+                                </button>
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Podruct name</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="/pages/contacto.html" class="btn btn-success">Más sobre mi</a>
+
+                            <div class="item" id="producto2">
+                                <div class="contenedor-foto">
+                                    <img src="../img/productos/2.png" alt="">
+                                </div>
+                                <p class="descripcion" id="#">NIKE RUNNING PERRATAS </p>
+                                <span class="precio">$ 1.800</span>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#seleccion" onclick="cargar(this)">
+                                    Descripción
+                                </button>
+                            </div>
+
+
+                            <div class="item" id="producto3">
+                                <div class="contenedor-foto">
+                                    <img src="../img/productos/2.png" alt="">
+                                </div>
+                                <p class="descripcion" id="#">NIKE RUNNING TERRA </p>
+                                <span class="precio">$ 1.800</span>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#seleccion" onclick="cargar(this)">
+                                    Descripción
+                                </button>
+                            </div>
+                            <div class="item" id="producto4">
+                                <div class="contenedor-foto">
+                                    <img src="../img/productos/2.png" alt="">
+                                </div>
+                                <p class="descripcion" id="#">NIKE RUNNING TERRA </p>
+                                <span class="precio">$ 1.800</span>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#seleccion" onclick="cargar(this)">
+                                    Descripción
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 mb-3 mb-sm-0">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-header">
-                                <img src="/img/productos/malla-cuadrada-mp.png" class="text-center" alt="...">
+                </section>
+            </div>
+            <div class="modal" tabindex="-1" id="seleccion">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Descripción del producto</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+                            <div class="seleccion">
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Podruct name</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional
-                                    content.</p>
-                                <a href="/pages/contacto.html" class="btn btn-success">Más sobre mi</a>
-                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
                         </div>
                     </div>
                 </div>
@@ -63,7 +106,8 @@
 
     </main>
 
-    <script src="../js/bg-script.js" defer></script>
+    <!--<script src="../js/bg-script.js" defer></script>-->
+    <script src="../js/script-catalogo.js" defer></script>
     <script src="../js/bootstrap.min.js" defer></script>
 </body>
 

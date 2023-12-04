@@ -9,22 +9,48 @@
     <link rel="stylesheet" href="../css/bootstrap-grid.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/jpg" href="/img/logo-hiecol.png" />
+    <link rel="icon" type="image/jpg" href="../img/logo-hiecol.png" />
     <title>Hiecol</title>
 </head>
 
 <body id="bg-container">
     <header>
-        <figure class="logo"><a href="index.html"><img src="/img/logo-hiecol.png" alt="Logo Hiecol"></a></figure>
-        <input type="checkbox" id="side-menu" class="side-menu">
-        <label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
-        <nav class="nav">
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="/pages/nosotros.html">Nosotros</a></li>
-                <li><a href="/pages/catalogo.html">Catálogo</a></li>
-                <li><a href="/pages/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="logo" href="index.html"><img src="/img/logo-hiecol.png"
+                        alt="Logo Hiecol"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><a href="index.html"></a></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html"
+                            style="color: #40B554;">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html" style="color: #40B554;">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="color: #40B554;">
+                                Catálogo
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../pages/catalogo/empaques.html" style="color: #40B554;">Empaques</a></li>
+                                <li><a class="dropdown-item" href="../pages/catalogo/amarres.html" style="color: #40B554;">Amarres</a></li>
+                                <li><a class="dropdown-item" href="../pages/catalogo/proteccion.html" style="color: #40B554;">Protección</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/contacto.html" style="color: #40B554;">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -87,7 +113,8 @@
                     </div>
                     <div class="from-group mb-3">
                         <label for="msj" class="form-label">Escribe tu mensaje para nosotros</label>
-                        <textarea class="form-control" id="msj" rows="3" placeholder="Cuéntanos en qué podemos ayudarte"></textarea>
+                        <textarea class="form-control" id="msj" rows="3"
+                            placeholder="Cuéntanos en qué podemos ayudarte"></textarea>
                         <div class="alert alert-warning alerta_msj" role="alert">
                             Mensaje muy corto, complementa la información
                         </div>
@@ -102,16 +129,12 @@
 
     </main>
 
-    <script src="../js/contacto-script.js" defer></script>
-    <script src="../js/bg-script.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/contacto-script.js" defer></script>
+    <script src="../js/bg-script.js"></script>
 </body>
 
 </html>

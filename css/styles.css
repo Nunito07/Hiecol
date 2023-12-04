@@ -47,11 +47,15 @@ a{
 
 #logo{
     display: inline-block;
-    width: 170px;
+    width: 220px;
     height: auto;
     margin-left: 15px;
 }
 
 #logo img{
     max-width: 100%;
+}
+
+#navbarNavDropdown a{
+    font-size: 20px;
 }

@@ -23,32 +23,36 @@ function cargar(btn) {
     // Obtener el contenedor del item (padre del botón)
     var item = btn.closest('.item');
 
-    // Obtener el id del producto desde el atributo id del contenedor
-    var idProducto = item.id;
+    // Verificar si el objeto item es nulo antes de intentar acceder a su propiedad id
+    if (item == null) {
+        console.log('no llegó el hpta item');
+    } else if (item != null) {
+        // Obtener la descripción del producto según el id
+        var descripcionProducto = obtenerDescripcion(item.id);
 
-    // Obtener la descripción del producto según el id
-    var descripcionProducto = obtenerDescripcion(idProducto);
+        // Clonar el contenido del item
+        var itemClonado = item.cloneNode(true);
 
-    // Clonar el contenido del item
-    var itemClonado = item.cloneNode(true);
+        // Limpiar el contenido existente del modal-body
+        var modalBody = document.querySelector('.modal-body');
+        modalBody.innerHTML = '';
 
-    // Limpiar el contenido existente del modal-body
-    var modalBody = document.querySelector('.modal-body');
-    modalBody.innerHTML = '';
+        // Agregar el item clonado al modal-body
+        modalBody.appendChild(itemClonado);
 
-    // Agregar el item clonado al modal-body
-    modalBody.appendChild(itemClonado);
+        // Actualizar el contenido del modal con la descripción
+        document.getElementById('descripcionDetallada').innerText = descripcionProducto;
 
-    // Actualizar el contenido del modal con la descripción
-    document.getElementById('descripcionProducto').innerText = descripcionProducto;
+        // Ajustar el tamaño de la imagen en el modal
+        ajustarTamanioImagenEnModal();
 
-    // Ajustar el tamaño de la imagen en el modal
-    ajustarTamanioImagenEnModal();
-
-    // Abre el modal
-    var modal = new bootstrap.Modal(document.getElementById('seleccion'));
-    modal.show();
+        // Abre el modal
+        var modal = new bootstrap.Modal(document.getElementById('seleccion'));
+        modal.show();
+    }
 }
+
+
 
 // Función para ajustar el tamaño de la imagen en el modal
 function ajustarTamanioImagenEnModal() {

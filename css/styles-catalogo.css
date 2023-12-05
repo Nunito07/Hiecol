@@ -180,3 +180,15 @@
 #navbarNavDropdown a{
     font-size: 20px;
 }
+
+.contenedor-foto{
+    padding: 15px;
+}
+
+#imagenItem{
+    max-height: 212px;
+    border-radius: 15px;
+    background-color: #e6e6e6;
+    border: 3px solid #40B554;
+
+}

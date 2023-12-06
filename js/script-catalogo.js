@@ -1,67 +1,61 @@
+function cargar(button) {
+    // Objeto que mapea identificadores de productos con descripciones
+    const descripciones = {
+        producto1: "Descripción detallada del Producto 1.",
+        producto2: "Descripción detallada del Producto 2.",
+        producto3: "Descripción detallada del Producto 1.",
+        producto4: "Descripción detallada del Producto 2.",
+        producto5: "Descripción detallada del Producto 1.",
+        producto6: "Descripción detallada del Producto 2.",
+        producto7: "Descripción detallada del Producto 1.",
+        producto8: "Descripción detallada del Producto 2.",
+        producto9: "Descripción detallada del Producto 1.",
+        producto10: "Descripción detallada del Producto 2.",
+        producto11: "Descripción detallada del Producto 1.",
+        producto12: "Descripción detallada del Producto 2.",
+        producto13: "Descripción detallada del Producto 1.",
+        producto14: "Descripción detallada del Producto 2.",
+        producto15: "Descripción detallada del Producto 1.",
+        producto16: "Descripción detallada del Producto 2.",
+        producto17: "Descripción detallada del Producto 1.",
+        producto18: "Descripción detallada del Producto 2.",
+        producto19: "Descripción detallada del Producto 1.",
+        producto20: "Descripción detallada del Producto 2.",
+        producto21: "Descripción detallada del Producto 2."
+    };
+    
+    // Identificar el elemento del item
+    const item = button.parentElement.parentElement.parentElement;
 
+    // Clonar el contenido del item, excluyendo el botón #btn-description
+    const itemClone = item.cloneNode(true);
+    itemClone.querySelector("#btn-description").remove();
 
-// Objeto que mapea identificadores de productos con descripciones
-const descripciones = {
-    producto1: "Descripción detallada del Producto 1.",
-    producto2: "Descripción detallada del Producto 2.",
-    // Agrega más productos según sea necesario
-};
+    // Obtener el ID del item clonado
+    const itemId = itemClone.id.replace("producto", "");
 
-// Función para obtener la descripción de un producto
-function obtenerDescripcion(idProducto) {
-    // Verifica si el identificador de producto existe en el objeto descripciones
-    if (descripciones.hasOwnProperty(idProducto)) {
-        // Devuelve la descripción correspondiente
-        return descripciones[idProducto];
-    } else {
-        // Si el identificador no está en el objeto, devuelve un mensaje de error
-        return "Descripción no disponible.";
-    }
-}
+    // Obtener la descripción del item
+    const description = descripciones["producto" + itemId];
 
-function cargar(btn) {
-    // Obtener el contenedor del item (padre del botón)
-    var item = btn.closest('.item');
+    // Limpiar el contenido del modal
+    document.getElementById("modalItemContent").innerHTML = "";
 
-    // Verificar si el objeto item es nulo antes de intentar acceder a su propiedad id
-    if (item == null) {
-        console.log('no llegó el hpta item');
-    } else if (item != null) {
-        // Obtener la descripción del producto según el id
-        var descripcionProducto = obtenerDescripcion(item.id);
+    // Agregar el contenido del item clonado al modal
+    itemClone.style.display = "block";
+    document.getElementById("modalItemContent").appendChild(itemClone);
 
-        // Clonar el contenido del item
-        var itemClonado = item.cloneNode(true);
-
-        // Limpiar el contenido existente del modal-body
-        var modalBody = document.querySelector('.modal-body');
-        modalBody.innerHTML = '';
-
-        // Agregar el item clonado al modal-body
-        modalBody.appendChild(itemClonado);
-
-        // Actualizar el contenido del modal con la descripción
-        document.getElementById('descripcionDetallada').innerText = descripcionProducto;
-
-        // Ajustar el tamaño de la imagen en el modal
-        ajustarTamanioImagenEnModal();
-
-        // Abre el modal
-        var modal = new bootstrap.Modal(document.getElementById('seleccion'));
-        modal.show();
-    }
+    // Agregar la descripción al modal
+    document.getElementById("descripcionDetallada").innerText = description;
 }
 
 
+// Añadir evento click a todos los botones de descripción
+const buttons = document.querySelectorAll("#btn-description");
+buttons.forEach(button => {
+    button.addEventListener("click", function () {
+        cargar(this);
+    });
+});
 
-// Función para ajustar el tamaño de la imagen en el modal
-function ajustarTamanioImagenEnModal() {
-    // Selecciona la imagen dentro del modal
-    var imagenEnModal = document.querySelector('.modal-body .item img');
 
-    // Aplica estilos a la imagen
-    if (imagenEnModal) {
-        imagenEnModal.style.maxWidth = "150px";
-        imagenEnModal.style.height = "auto";
-    }
-}
+

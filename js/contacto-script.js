@@ -2,12 +2,12 @@ function enviarCorreo() {
     $(".alerta_correo").css('display', 'none');
     $(".alerta_name").css('display', 'none');
     $(".alerta_msj").css('display', 'none');
+
     var name = $("#fullName").val();
     var mail = $("#mail").val();
     var msj = $("#msj").val();
     var valido = 1;
     var vald_mail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
 
     if (!vald_mail.test(mail)) {
         $(".alerta_correo").css('display', 'block');
@@ -16,25 +16,32 @@ function enviarCorreo() {
     if (name.length <= 5) {
         $(".alerta_name").css('display', 'block');
         valido = 0;
-        console.log(name);
     }
     if (msj.length <= 5) {
         $(".alerta_msj").css('display', 'block');
         valido = 0;
-        console.log(msj);
     }
+
     if (valido == 1) {
-        var datos =  '&name' + name + '&correo=' + mail + '&mensaje=' + msj;
+        alert('Mensaje enviado');
+        var datos = '&name=' + name + '&correo=' + mail + '&mensaje=' + msj;
+
+        // Limpiar campos después de enviar
+        $("#fullName").val('');
+        $("#mail").val('');
+        $("#msj").val('');
+
         $.ajax({
             type: "POST",
-            url: "enviar.php",
+            url: "../php/enviar_mail.php",
             data: datos,
             success: function (res) {
-
+                // Manejar la respuesta si es necesario
+                console.log('funciona esa monda');
             },
             error: function (res) {
+                // Manejar el error si es necesario
             }
         });
     }
-
 }

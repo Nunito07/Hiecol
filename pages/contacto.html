@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/bootstrap-grid.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/jpg" href="../img/logo-hiecol.png" />
+    <link rel="icon" type="image/jpg" href="../img/logo/logo-hiecol.png" />
     <title>Hiecol</title>
 </head>
 
@@ -17,7 +17,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" id="logo" href="../index.html"><img src="/img/logo-hiecol.png"
+                <a class="navbar-brand" id="logo" href="index.html"><img src="../img/logo/logo-hiecol.png"
                         alt="Logo Hiecol"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -27,11 +27,11 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html"
-                            style="color: #40B554;">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="index.html"
+                                style="color: #40B554;">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html" style="color: #40B554;">Nosotros</a>
+                            <a class="nav-link" href="quienes-somos.html" style="color: #40B554;">Quiénes somos</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -39,14 +39,17 @@
                                 Catálogo
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../pages/catalogo/empaques.html" style="color: #40B554;">Empaques</a></li>
-                                <li><a class="dropdown-item" href="../pages/catalogo/amarres.html" style="color: #40B554;">Amarres</a></li>
-                                <li><a class="dropdown-item" href="../pages/catalogo/proteccion.html" style="color: #40B554;">Protección</a>
+                                <li><a class="dropdown-item" href="catalogo/empaques.html"
+                                        style="color: #40B554;">Empaques</a></li>
+                                <li><a class="dropdown-item" href=".catalogo/amarres.html"
+                                        style="color: #40B554;">Amarres</a></li>
+                                <li><a class="dropdown-item" href="catalogo/proteccion.html"
+                                        style="color: #40B554;">Protección</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/pages/contacto.html" style="color: #40B554;">Contacto</a>
+                            <a class="nav-link" href="contacto.html" style="color: #40B554;">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -60,16 +63,56 @@
                     <div class="col" id="infoBox1">
                         <h1 id="escribenos">Escríbenos</h1>
                         <p>
-                            <span>Regístrate y conoce los beneficios de usar nuestros empaques</span>
+                            <span>Comunicate con nosotros para tener el placer de atenderte.</span>
                         </p>
                         <hr>
+                        <!--Centros de distribución-->
                         <div class="row">
                             <div class="col-2">
                                 <i class="fa fa-map-marker" aria-hidden="true" id="fa-map-marker"></i>
                             </div>
                             <div class="col-10">
-                                <h2 class="locationTitle">Ubicación</h2>
-                                <p class="locationText">Avenida panamericana Km 7 Sector los Chilcos Ipiales</p>
+                                <div>
+                                    <h2 class="locationTitle">Centros de Distribución Hiecol</h2>
+                                    <p class="locationText"><span style="font-weight: bold;">Ipiales</span>
+                                        Carrera 3 No 15 – 65 B/ Bellavista <br><i class="fa fa-whatsapp"
+                                            aria-hidden="true" id="fa-fa-whatsapp" style="font-size: 15px;"></i>
+                                        320 585 1348
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="locationText"><span style="font-weight: bold;">Pasto</span>
+                                        Calle 15 No 10 – 25 B/ Las Lunas <br><i class="fa fa-whatsapp"
+                                            aria-hidden="true" id="fa-fa-whatsapp" style="font-size: 15px;"></i>
+                                        323 232 4637
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="locationText"><span style="font-weight: bold;">Popayán</span>
+                                        Carrera 6 No 6N – 23 B/ Bolívar <br><i class="fa fa-whatsapp" aria-hidden="true"
+                                            id="fa-fa-whatsapp" style="font-size: 15px;"></i>
+                                        311 642 8619
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Plantas de producción-->
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa fa-map-marker" aria-hidden="true" id="fa-map-marker"></i>
+                            </div>
+                            <div class="col-10">
+                                <div>
+                                    <h2 class="locationTitle">Plantas de Producción Hiecol</h2>
+                                    <p class="locationText"><span style="font-weight: bold;">Ipiales – Nariño<br></span>
+                                        Av. Panamericana Km 7 Sector Los Chilcos<br>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="locationText"><span style="font-weight: bold;">Yumbo – Valle<br></span>
+                                        Parque Industrial Arroyohondo Bloque 6A Bodega 3<br>
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
@@ -88,14 +131,17 @@
                                 <i class="fa fa-whatsapp" aria-hidden="true" id="fa-fa-whatsapp"></i>
                             </div>
                             <div class="col-10">
-                                <h2 class="locationTitle">WhatsApp</h2>
-                                <p class="locationText">(+57) 3135625863</p>
+                                <h2 class="locationTitle">Ventas nacionales</h2>
+                                <p class="locationText">(+57) 313-562-6853</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col text-start" id="infoBox2">
-                    <h1 id="registro">Registrate aquí</h1>
+                    <h1 class="text-center" id="registro">Registrate aquí</h1>
+                    <p class="text-center">
+                        <span style="color: #FFFFFF;">Regístrate y conoce los beneficios de usar nuestros empaques</span>
+                    </p>
                     <hr>
                     <div class="from-group mb-3">
                         <label for="fullName" class="form-label">Nombre completo*</label>

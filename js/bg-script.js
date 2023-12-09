@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentIndex = 0;
 
     // Establecer una imagen inicial
-    backgroundContainer.style.backgroundImage = 'url("../img/bg-1.jpg")';
+    backgroundContainer.style.backgroundImage = 'url("../img/bg/bg-1.jpg")';
 
     // Cambiar al segundo fondo después de 3 segundos
     setTimeout(function () {
@@ -14,6 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function changeBackground() {
         currentIndex = (currentIndex + 1) % images.length;
-        backgroundContainer.style.backgroundImage = `url("../img/${images[currentIndex]}.jpg")`;
+        backgroundContainer.style.backgroundImage = `url("../img/bg/${images[currentIndex]}.jpg")`;
     }
 });

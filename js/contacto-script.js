@@ -36,11 +36,12 @@ function enviarCorreo() {
             url: "../php/enviar_mail.php",
             data: datos,
             success: function (res) {
-                // Manejar la respuesta si es necesario
-                console.log('funciona esa monda');
+                // Manejar la respuesta del servidor
+                alert(res); // Muestra el mensaje de éxito o cualquier otra respuesta
             },
-            error: function (res) {
-                // Manejar el error si es necesario
+            error: function () {
+                // Manejar errores de la solicitud AJAX
+                alert('Hubo un error en la solicitud AJAX');
             }
         });
     }

@@ -14,6 +14,7 @@ main {
      text-align: center;
      max-width: 568px;
      width: 100%;
+     padding-bottom: 48px;
  }
 
  #infoBox2 {
@@ -60,6 +61,7 @@ main {
    color: #40B554;
    font-family: 'Nunito Sans', sans-serif;
    font-weight: 600;
+   font-size: 15px;
 }
 
  @media (max-width: 514px)

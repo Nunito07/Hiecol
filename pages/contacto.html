@@ -36,7 +36,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="catalogo/empaques.html"
                                         style="color: #40B554;">Empaques</a></li>
-                                <li><a class="dropdown-item" href=".catalogo/amarres.html"
+                                <li><a class="dropdown-item" href="catalogo/amarres.html"
                                         style="color: #40B554;">Amarres</a></li>
                                 <li><a class="dropdown-item" href="catalogo/proteccion.html"
                                         style="color: #40B554;">Protección</a>
@@ -56,11 +56,6 @@
             <div class="row">
                 <div class="col">
                     <div class="col" id="infoBox1">
-                        <h1 id="escribenos">Escríbenos</h1>
-                        <p>
-                            <span>Comunicate con nosotros para tener el placer de atenderte.</span>
-                        </p>
-                        <hr>
                         <!--Centros de distribución-->
                         <div class="row">
                             <div class="col-2">
@@ -68,7 +63,7 @@
                             </div>
                             <div class="col-10">
                                 <div>
-                                    <h2 class="locationTitle">Centros de Distribución Hiecol</h2>
+                                    <h2 class="locationTitle">CENTROS DE DISTRIBUCIÓN</h2>
                                     <p class="locationText"><span style="font-weight: bold;">Ipiales</span>
                                         Carrera 3 No 15 – 65 B/ Bellavista <br><i class="fa fa-whatsapp"
                                             aria-hidden="true" id="fa-fa-whatsapp" style="font-size: 15px;"></i>
@@ -98,7 +93,7 @@
                             </div>
                             <div class="col-10">
                                 <div>
-                                    <h2 class="locationTitle">Plantas de Producción Hiecol</h2>
+                                    <h2 class="locationTitle">PLANTAS DE PRODUCCIÓN</h2>
                                     <p class="locationText"><span style="font-weight: bold;">Ipiales – Nariño<br></span>
                                         Av. Panamericana Km 7 Sector Los Chilcos<br>
                                     </p>
@@ -113,16 +108,6 @@
 
                         <div class="row">
                             <div class="col-2">
-                                <i class="fa fa-envelope-o" aria-hidden="true" id="fa-fa-envelope-o"></i>
-                            </div>
-                            <div class="col-10">
-                                <h2 class="locationTitle">Correo electrónico</h2>
-                                <p class="locationText"><a href="mailto:japerez@hiecol.com">japerez@hiecol.com</a></p>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-2">
                                 <i class="fa fa-whatsapp" aria-hidden="true" id="fa-fa-whatsapp"></i>
                             </div>
                             <div class="col-10">
@@ -130,19 +115,33 @@
                                 <p class="locationText">(+57) 313-562-6853</p>
                             </div>
                         </div>
+
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa fa-envelope-o" aria-hidden="true" id="fa-fa-envelope-o"></i>
+                            </div>
+                            <div class="col-10">
+                                <h2 class="locationTitle">Correo electrónico</h2>
+                                <p class="locationText"><a href="mailto:japerez@hiecol.com">japerez@hiecol.com</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!--FORMULARIO DE CONTACTO-->
                 <div class="col text-start" id="infoBox2">
-                    <h1 class="text-center" id="registro">Registrate aquí</h1>
-                    <p class="text-center">
-                        <span style="color: #FFFFFF;">Regístrate y conoce los beneficios de usar nuestros empaques</span>
-                    </p>
-                    <hr>
                     <div class="from-group mb-3">
                         <label for="fullName" class="form-label">Nombre completo*</label>
                         <input type="text" class="form-control" id="fullName" placeholder="Nombre completo">
                         <div class="alert alert-warning alerta_name" role="alert">
                             Por favor completa tu nombre.
+                        </div>
+                    </div>
+                    <div class="from-group mb-3">
+                        <label for="fullName" class="form-label">Celular*</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="Número de celular">
+                        <div class="alert alert-warning alerta_name" role="alert">
+                            Por favor completa tu celular.
                         </div>
                     </div>
                     <div class="from-group mb-3">
@@ -153,7 +152,21 @@
                         </div>
                     </div>
                     <div class="from-group mb-3">
-                        <label for="msj" class="form-label">Escribe tu mensaje para nosotros</label>
+                        <label for="fullName" class="form-label">Empresa*</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="Nombre de la empresa">
+                        <div class="alert alert-warning alerta_name" role="alert">
+                            Por favor escribe el nombre de tu empresa.
+                        </div>
+                    </div>
+                    <div class="from-group mb-3">
+                        <label for="fullName" class="form-label">Ciudad*</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="Ciudad de dónde escribes">
+                        <div class="alert alert-warning alerta_name" role="alert">
+                            Por favor escribe la ciudad de dónde nos escribes.
+                        </div>
+                    </div>
+                    <div class="from-group mb-3">
+                        <label for="msj" class="form-label">Escribe tu mensaje para nosotros*</label>
                         <textarea class="form-control" id="msj" rows="3"
                             placeholder="Cuéntanos en qué podemos ayudarte"></textarea>
                         <div class="alert alert-warning alerta_msj" role="alert">

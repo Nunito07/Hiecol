@@ -1,20 +1,38 @@
 function enviarCorreo() {
-    $(".alerta_correo").css('display', 'none');
     $(".alerta_name").css('display', 'none');
+    $(".alerta_cel").css('display', 'none');
+    $(".alerta_correo").css('display', 'none');
+    $(".alerta_empresa").css('display', 'none');
+    $(".alerta_city").css('display', 'none');
     $(".alerta_msj").css('display', 'none');
 
     var name = $("#fullName").val();
+    var celular = $("#celular").val();
     var mail = $("#mail").val();
+    var empresa = $("#empresa").val();
+    var ciudad = $("#ciudad").val();
     var msj = $("#msj").val();
     var valido = 1;
     var vald_mail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
+    if (name.length <= 5) {
+        $(".alerta_name").css('display', 'block');
+        valido = 0;
+    }
+    if (celular.length <= 5) {
+        $(".alerta_cel").css('display', 'block');
+        valido = 0;
+    }
     if (!vald_mail.test(mail)) {
         $(".alerta_correo").css('display', 'block');
         valido = 0;
     }
-    if (name.length <= 5) {
-        $(".alerta_name").css('display', 'block');
+    if (empresa.length <= 5) {
+        $(".alerta_empresa").css('display', 'block');
+        valido = 0;
+    }
+    if (ciudad.length <= 5) {
+        $(".alerta_city").css('display', 'block');
         valido = 0;
     }
     if (msj.length <= 5) {
@@ -23,12 +41,14 @@ function enviarCorreo() {
     }
 
     if (valido == 1) {
-        alert('Mensaje enviado');
-        var datos = '&name=' + name + '&correo=' + mail + '&mensaje=' + msj;
+        var datos = '&name=' + name + '&celular=' + celular + '&mail=' + mail + '&empresa=' + empresa + '&ciudad=' + ciudad + '&mensaje=' + msj;
 
         // Limpiar campos después de enviar
         $("#fullName").val('');
+        $("#celular").val('');
         $("#mail").val('');
+        $("#empresa").val('');
+        $("#ciudad").val('');
         $("#msj").val('');
 
         $.ajax({

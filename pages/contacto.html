@@ -129,7 +129,7 @@
                 </div>
 
                 <!--FORMULARIO DE CONTACTO-->
-                <div class="col text-start" id="infoBox2">
+                <form class="col text-start" id="infoBox2">
                     <div class="from-group mb-3">
                         <label for="fullName" class="form-label">Nombre completo*</label>
                         <input type="text" class="form-control" id="fullName" placeholder="Nombre completo">
@@ -139,8 +139,8 @@
                     </div>
                     <div class="from-group mb-3">
                         <label for="fullName" class="form-label">Celular*</label>
-                        <input type="text" class="form-control" id="fullName" placeholder="Número de celular">
-                        <div class="alert alert-warning alerta_name" role="alert">
+                        <input type="number" class="form-control" id="celular" placeholder="Número de celular">
+                        <div class="alert alert-warning alerta_cel" role="alert">
                             Por favor completa tu celular.
                         </div>
                     </div>
@@ -153,15 +153,15 @@
                     </div>
                     <div class="from-group mb-3">
                         <label for="fullName" class="form-label">Empresa*</label>
-                        <input type="text" class="form-control" id="fullName" placeholder="Nombre de la empresa">
-                        <div class="alert alert-warning alerta_name" role="alert">
+                        <input type="text" class="form-control" id="empresa" placeholder="Nombre de la empresa">
+                        <div class="alert alert-warning alerta_empresa" role="alert">
                             Por favor escribe el nombre de tu empresa.
                         </div>
                     </div>
                     <div class="from-group mb-3">
                         <label for="fullName" class="form-label">Ciudad*</label>
-                        <input type="text" class="form-control" id="fullName" placeholder="Ciudad de dónde escribes">
-                        <div class="alert alert-warning alerta_name" role="alert">
+                        <input type="text" class="form-control" id="ciudad" placeholder="Ciudad de dónde escribes">
+                        <div class="alert alert-warning alerta_city" role="alert">
                             Por favor escribe la ciudad de dónde nos escribes.
                         </div>
                     </div>
@@ -177,7 +177,7 @@
                         <a href="#" class="btn btn-light btn-lg" role="button" aria-pressed="true" id="btn-envio"
                             onclick="enviarCorreo()">Enviar mensaje</a>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
 

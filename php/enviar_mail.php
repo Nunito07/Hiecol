@@ -2,43 +2,44 @@
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-use PHPMailer\PHPMailer\SMTP;
-
 
 require './phpmailer/Exception.php';
 require './phpmailer/PHPMailer.php';
 require './phpmailer/SMTP.php';
 
+define("destinatario", "sebastianzzz123456@gmail.com");
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
-    $correo = $_POST["correo"];
+    $celular = $_POST["celular"];
+    $correo = filter_var($_POST["mail"], FILTER_SANITIZE_EMAIL);
+    $empresa = $_POST["empresa"];
+    $city = $_POST["ciudad"];
     $mensaje = $_POST["mensaje"];
 
     try {
-
-        // Configuración de PHPMailer para Gmail
         $mail = new PHPMailer(true);
         $mail->isSMTP();
-        $mail->Host = 'smtp-relay.gmail.com';  // Host de Gmail
+        $mail->Host = 'smtp.gmail.com';
         $mail->SMTPSecure = 'tls';
-        //$mail->SMTPSecure = 'ssl';
         $mail->Port = 587;
-
-        // Configuración de autenticación SMTP
         $mail->SMTPAuth = true;
         $mail->Username = 'sebastianzzz123456@gmail.com';
-        $mail->Password = 'tfinbpqtwgruvqkj';
+        $mail->Password = 'oknmrgeobsdgbapx';
 
-        // Configuración del mensaje
-        $mail->setFrom($correo, $name);  // Utiliza la dirección de correo proporcionada en el formulario como remitente
-        $mail->addAddress('sebastianzzz123456@gmail.com'); // Correo destino
+        $mail->CharSet = 'UTF-8';
+        $mail->FromName = $name;
+        $mail->addAddress(destinatario);
         $mail->isHTML(true);
-        $mail->Subject = 'Consulta de información';
-        $mail->Body = "Nombre: $name<br>Correo: $correo<br>Mensaje: $mensaje";
-        
+        $mail->Subject = 'CONSULTA DE INFORMACION';
+        $mail->Body = "Nombre: $name<br>Celular: $celular<br>Correo: $correo<br>Empresa: $empresa<br>Ciudad: $city<br>Mensaje: $mensaje";
+        $mail->addReplyTo($correo, $name);
+
         $mail->send();
-        echo 'success';
+        echo 'Correo enviado correctamente.';
     } catch (Exception $e) {
         echo "Error al enviar el correo: {$mail->ErrorInfo}";
     }
 }
+
+?>

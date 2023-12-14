@@ -47,7 +47,7 @@ a{
 
 #logo{
     display: inline-block;
-    width: 220px;
+    width: 280px;
     height: auto;
     margin-left: 15px;
 }
@@ -59,3 +59,13 @@ a{
 #navbarNavDropdown a{
     font-size: 20px;
 }
+
+.img-firma img{
+    max-width: 300px;
+}
+
+@media (max-width: 514px) {
+    .img-firma img {
+        max-width: 200px;
+    }
+ }

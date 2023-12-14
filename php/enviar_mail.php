@@ -7,12 +7,12 @@ require './phpmailer/Exception.php';
 require './phpmailer/PHPMailer.php';
 require './phpmailer/SMTP.php';
 
-define("destinatario", "sebastianzzz123456@gmail.com");
+//define("destinatario", "sebastianzzz123456@gmail.com");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
     $celular = $_POST["celular"];
-    $correo = filter_var($_POST["mail"], FILTER_SANITIZE_EMAIL);
+    $correo_remitente = filter_var($_POST["mail"], FILTER_SANITIZE_EMAIL);
     $empresa = $_POST["empresa"];
     $city = $_POST["ciudad"];
     $mensaje = $_POST["mensaje"];
@@ -20,26 +20,73 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         $mail = new PHPMailer(true);
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
-        $mail->SMTPSecure = 'tls';
-        $mail->Port = 587;
+        $mail->Host = 'mail.hiecol.com.co';
+        $mail->SMTPSecure = 'ssl';
+        $mail->Port = 465;
         $mail->SMTPAuth = true;
-        $mail->Username = 'sebastianzzz123456@gmail.com';
-        $mail->Password = 'oknmrgeobsdgbapx';
+        $mail->Username = 'no-responder@hiecol.com.co';
+        $mail->Password = '-mt7n4&2*mHY';
 
         $mail->CharSet = 'UTF-8';
-        $mail->FromName = $name;
-        $mail->addAddress(destinatario);
+        $mail->setFrom("no-responder@hiecol.com.co", "$name");
+        $mail->addAddress('Sistemas@hiecol.com');
         $mail->isHTML(true);
         $mail->Subject = 'CONSULTA DE INFORMACION';
-        $mail->Body = "Nombre: $name<br>Celular: $celular<br>Correo: $correo<br>Empresa: $empresa<br>Ciudad: $city<br>Mensaje: $mensaje";
-        $mail->addReplyTo($correo, $name);
+        $mail->Body = "<html>
+        <head>
+            <style>
+                /* Estilos para el cuerpo del correo */
+                body {
+                    font-family: 'Arial', sans-serif;
+                    background-color: #f4f4f4;
+                }
+
+                .container {
+                    max-width: 600px;
+                    margin: 0 auto;
+                    padding: 20px;
+                    background-color: #fff;
+                    border-radius: 5px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                }
+
+                h2 {
+                    color: #40B554;
+                    border-bottom: 1px solid #ddd;
+                    padding-bottom: 10px;
+                }
+
+                strong{
+                    color: #40B554;
+                }
+
+                p {
+                    color: #555;
+                }
+            </style>
+        </head>
+        <body>
+            <div class='container'>
+                <h2>Consulta de Información</h2>
+                <p><strong>Nombre:</strong> $name</p>
+                <p><strong>Celular:</strong> $celular</p>
+                <p><strong>Correo:</strong> $correo_remitente</p>
+                <p><strong>Empresa:</strong> $empresa</p>
+                <p><strong>Ciudad:</strong> $city</p>
+                <p><strong>Mensaje:</strong> $mensaje</p>
+                <p>*Al seleccionar la opción responder, se dirigirá la respuesta directamente al correo 
+                electrónico del usuario que haya solicitado la consulta de información</p>
+            </div>
+        </body>
+        </html>
+    ";
+        $mail->addReplyTo($correo_remitente, $name);
 
         $mail->send();
-        echo 'Correo enviado correctamente.';
+        echo "Correo enviado correctamente";
+        header("Location: ./index.html");
+        exit();
     } catch (Exception $e) {
         echo "Error al enviar el correo: {$mail->ErrorInfo}";
     }
 }
-
-?>

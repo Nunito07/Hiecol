@@ -20,16 +20,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         $mail = new PHPMailer(true);
         $mail->isSMTP();
-        $mail->Host = 'mail.hiecol.com.co';
-        $mail->SMTPSecure = 'ssl';
-        $mail->Port = 465;
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPSecure = 'tls';
+        $mail->Port = 587;
         $mail->SMTPAuth = true;
-        $mail->Username = 'no-responder@hiecol.com.co';
-        $mail->Password = '-mt7n4&2*mHY';
+        $mail->Username = 'no-responder@hiecol.com';
+        $mail->Password = 'NoResponderHiecol2023*';
 
         $mail->CharSet = 'UTF-8';
-        $mail->setFrom("no-responder@hiecol.com.co", "$name");
-        $mail->addAddress('Sistemas@hiecol.com');
+        $mail->setFrom("no-responder@hiecol.com", "$name");
+        $mail->addAddress('sistemas@hiecol.com');
+        $mail->addAddress('japerez@hiecol.com');
+        $mail->addAddress('sebastianzzz123456@gmail.com');
         $mail->isHTML(true);
         $mail->Subject = 'CONSULTA DE INFORMACION';
         $mail->Body = "<html>
@@ -75,7 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <p><strong>Ciudad:</strong> $city</p>
                 <p><strong>Mensaje:</strong> $mensaje</p>
                 <p>*Al seleccionar la opción responder, se dirigirá la respuesta directamente al correo 
-                electrónico del usuario que haya solicitado la consulta de información</p>
+                electrónico del usuario que haya solicitado la consulta de información.</p>
             </div>
         </body>
         </html>
@@ -84,8 +86,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $mail->send();
         echo "Correo enviado correctamente";
-        header("Location: ./index.html");
-        exit();
     } catch (Exception $e) {
         echo "Error al enviar el correo: {$mail->ErrorInfo}";
     }

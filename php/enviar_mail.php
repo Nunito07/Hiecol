@@ -31,7 +31,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->setFrom("no-responder@hiecol.com", "$name");
         $mail->addAddress('sistemas@hiecol.com');
         $mail->addAddress('japerez@hiecol.com');
-        $mail->addAddress('sebastianzzz123456@gmail.com');
         $mail->isHTML(true);
         $mail->Subject = 'CONSULTA DE INFORMACION';
         $mail->Body = "<html>

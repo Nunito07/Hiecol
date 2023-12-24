@@ -232,6 +232,123 @@ const descripciones = [
             '<li>Rollo 3m x 100 mL - Calibre 4</li><li>Rollo 4m x 100 mL - Calibre 4</li>'+
             '<li>Rollo 4m x 100 mL - Calibre 6</li><li>Rollo 6m x 100 mL - Calibre 6</li></ul></div>'
     }
+    {
+        id: 21,
+        img: '../../img/productos/plastico-negro.jpg',
+        nameProduct: 'PLÁSTICO NEGRO',
+        descripcion: '<div class="containerDetail" style="border: 2px solid #40B554; padding: 10px;">' +
+            '<p style="font-weight: 400;">' +
+            'Película de polietileno utilizado en construcciones, remodelaciones, protección de materiales bajo la lluvia y cerramientos en general.</p>'+
+            '<p style="font-weight: bold; color: #40B554;">Color:<span style="font-weight: 400; color: #000000;"><br>Negro</span></p>' +
+            '<p style="font-weight: bold; color: #40B554;">Presentaciones (medida y calibre):</p>' +
+            '<ul style="list-style: inside; text-align: start;">'+
+            '<li>Rollo 3m x 100 mL - Calibre 4</li><li>Rollo 4m x 100 mL - Calibre 4</li>'+
+            '<li>Rollo 4m x 100 mL - Calibre 6</li><li>Rollo 6m x 100 mL - Calibre 6</li></ul></div>'
+    }
+    {
+        id: 22,
+        img: '../../img/productos/plastico-negro.jpg',
+        nameProduct: 'PLÁSTICO NEGRO',
+        descripcion: '<div class="containerDetail" style="border: 2px solid #40B554; padding: 10px;">' +
+            '<p style="font-weight: 400;">' +
+            'Película de polietileno utilizado en construcciones, remodelaciones, protección de materiales bajo la lluvia y cerramientos en general.</p>'+
+            '<p style="font-weight: bold; color: #40B554;">Color:<span style="font-weight: 400; color: #000000;"><br>Negro</span></p>' +
+            '<p style="font-weight: bold; color: #40B554;">Presentaciones (medida y calibre):</p>' +
+            '<ul style="list-style: inside; text-align: start;">'+
+            '<li>Rollo 3m x 100 mL - Calibre 4</li><li>Rollo 4m x 100 mL - Calibre 4</li>'+
+            '<li>Rollo 4m x 100 mL - Calibre 6</li><li>Rollo 6m x 100 mL - Calibre 6</li></ul></div>'
+    }
+    {
+        id: 23,
+        img: '../../img/productos/plastico-negro.jpg',
+        nameProduct: 'PLÁSTICO NEGRO',
+        descripcion: '<div class="containerDetail" style="border: 2px solid #40B554; padding: 10px;">' +
+            '<p style="font-weight: 400;">' +
+            'Película de polietileno utilizado en construcciones, remodelaciones, protección de materiales bajo la lluvia y cerramientos en general.</p>'+
+            '<p style="font-weight: bold; color: #40B554;">Color:<span style="font-weight: 400; color: #000000;"><br>Negro</span></p>' +
+            '<p style="font-weight: bold; color: #40B554;">Presentaciones (medida y calibre):</p>' +
+            '<ul style="list-style: inside; text-align: start;">'+
+            '<li>Rollo 3m x 100 mL - Calibre 4</li><li>Rollo 4m x 100 mL - Calibre 4</li>'+
+            '<li>Rollo 4m x 100 mL - Calibre 6</li><li>Rollo 6m x 100 mL - Calibre 6</li></ul></div>'
+    }
+    {
+        id: 24,
+        img: '../../img/productos/plastico-negro.jpg',
+        nameProduct: 'PLÁSTICO NEGRO',
+        descripcion: '<div class="containerDetail" style="border: 2px solid #40B554; padding: 10px;">' +
+            '<p style="font-weight: 400;">' +
+            'Película de polietileno utilizado en construcciones, remodelaciones, protección de materiales bajo la lluvia y cerramientos en general.</p>'+
+            '<p style="font-weight: bold; color: #40B554;">Color:<span style="font-weight: 400; color: #000000;"><br>Negro</span></p>' +
+            '<p style="font-weight: bold; color: #40B554;">Presentaciones (medida y calibre):</p>' +
+            '<ul style="list-style: inside; text-align: start;">'+
+            '<li>Rollo 3m x 100 mL - Calibre 4</li><li>Rollo 4m x 100 mL - Calibre 4</li>'+
+            '<li>Rollo 4m x 100 mL - Calibre 6</li><li>Rollo 6m x 100 mL - Calibre 6</li></ul></div>'
+    }
+    {
+        id: 25,
+        img: '../../img/productos/plastico-negro.jpg',
+        nameProduct: 'PLÁSTICO NEGRO',
+        descripcion: '<div class="containerDetail" style="border: 2px solid #40B554; padding: 10px;">' +
+            '<p style="font-weight: 400;">' +
+            'Película de polietileno utilizado en construcciones, remodelaciones, protección de materiales bajo la lluvia y cerramientos en general.</p>'+
+            '<p style="font-weight: bold; color: #40B554;">Color:<span style="font-weight: 400; color: #000000;"><br>Negro</span></p>' +
+            '<p style="font-weight: bold; color: #40B554;">Presentaciones (medida y calibre):</p>' +
+            '<ul style="list-style: inside; text-align: start;">'+
+            '<li>Rollo 3m x 100 mL - Calibre 4</li><li>Rollo 4m x 100 mL - Calibre 4</li>'+
+            '<li>Rollo 4m x 100 mL - Calibre 6</li><li>Rollo 6m x 100 mL - Calibre 6</li></ul></div>'
+    }
+    {
+        id: 26,
+        img: '../../img/productos/plastico-negro.jpg',
+        nameProduct: 'PLÁSTICO NEGRO',
+        descripcion: '<div class="containerDetail" style="border: 2px solid #40B554; padding: 10px;">' +
+            '<p style="font-weight: 400;">' +
+            'Película de polietileno utilizado en construcciones, remodelaciones, protección de materiales bajo la lluvia y cerramientos en general.</p>'+
+            '<p style="font-weight: bold; color: #40B554;">Color:<span style="font-weight: 400; color: #000000;"><br>Negro</span></p>' +
+            '<p style="font-weight: bold; color: #40B554;">Presentaciones (medida y calibre):</p>' +
+            '<ul style="list-style: inside; text-align: start;">'+
+            '<li>Rollo 3m x 100 mL - Calibre 4</li><li>Rollo 4m x 100 mL - Calibre 4</li>'+
+            '<li>Rollo 4m x 100 mL - Calibre 6</li><li>Rollo 6m x 100 mL - Calibre 6</li></ul></div>'
+    }
+    {
+        id: 27,
+        img: '../../img/productos/plastico-negro.jpg',
+        nameProduct: 'PLÁSTICO NEGRO',
+        descripcion: '<div class="containerDetail" style="border: 2px solid #40B554; padding: 10px;">' +
+            '<p style="font-weight: 400;">' +
+            'Película de polietileno utilizado en construcciones, remodelaciones, protección de materiales bajo la lluvia y cerramientos en general.</p>'+
+            '<p style="font-weight: bold; color: #40B554;">Color:<span style="font-weight: 400; color: #000000;"><br>Negro</span></p>' +
+            '<p style="font-weight: bold; color: #40B554;">Presentaciones (medida y calibre):</p>' +
+            '<ul style="list-style: inside; text-align: start;">'+
+            '<li>Rollo 3m x 100 mL - Calibre 4</li><li>Rollo 4m x 100 mL - Calibre 4</li>'+
+            '<li>Rollo 4m x 100 mL - Calibre 6</li><li>Rollo 6m x 100 mL - Calibre 6</li></ul></div>'
+    }
+    {
+        id: 28,
+        img: '../../img/productos/plastico-negro.jpg',
+        nameProduct: 'PLÁSTICO NEGRO',
+        descripcion: '<div class="containerDetail" style="border: 2px solid #40B554; padding: 10px;">' +
+            '<p style="font-weight: 400;">' +
+            'Película de polietileno utilizado en construcciones, remodelaciones, protección de materiales bajo la lluvia y cerramientos en general.</p>'+
+            '<p style="font-weight: bold; color: #40B554;">Color:<span style="font-weight: 400; color: #000000;"><br>Negro</span></p>' +
+            '<p style="font-weight: bold; color: #40B554;">Presentaciones (medida y calibre):</p>' +
+            '<ul style="list-style: inside; text-align: start;">'+
+            '<li>Rollo 3m x 100 mL - Calibre 4</li><li>Rollo 4m x 100 mL - Calibre 4</li>'+
+            '<li>Rollo 4m x 100 mL - Calibre 6</li><li>Rollo 6m x 100 mL - Calibre 6</li></ul></div>'
+    }
+    {
+        id: 29,
+        img: '../../img/productos/plastico-negro.jpg',
+        nameProduct: 'PLÁSTICO NEGRO',
+        descripcion: '<div class="containerDetail" style="border: 2px solid #40B554; padding: 10px;">' +
+            '<p style="font-weight: 400;">' +
+            'Película de polietileno utilizado en construcciones, remodelaciones, protección de materiales bajo la lluvia y cerramientos en general.</p>'+
+            '<p style="font-weight: bold; color: #40B554;">Color:<span style="font-weight: 400; color: #000000;"><br>Negro</span></p>' +
+            '<p style="font-weight: bold; color: #40B554;">Presentaciones (medida y calibre):</p>' +
+            '<ul style="list-style: inside; text-align: start;">'+
+            '<li>Rollo 3m x 100 mL - Calibre 4</li><li>Rollo 4m x 100 mL - Calibre 4</li>'+
+            '<li>Rollo 4m x 100 mL - Calibre 6</li><li>Rollo 6m x 100 mL - Calibre 6</li></ul></div>'
+    }
 ];
 
 function cargar(button) {

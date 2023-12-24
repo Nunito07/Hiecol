@@ -69,3 +69,14 @@ a{
         max-width: 200px;
     }
  }
+
+ .titulos-productos{
+    font-size: 3em;
+    font-family: 'Nunito Sans', 'Open Sans';
+    color: #40B554;
+    margin: 15px 0 20px 0;
+ }
+
+ .descripcion{
+    font-weight: bold;
+ }

@@ -59,16 +59,18 @@
         <section class="section-contacto" id="section-catalogo">
             <div id="infoBox">
                 <div class="container text-center">
-                    <h2 class="titulos-productos">SACOS</h2>
+                    <div class="bg-titulos-productos row">
+                        <h2 class="titulos-productos">SACOS</h2>
+                    </div>
                     <div class="row">
                         <div class="col">
                             <div class="fila">
                                 <div class="item" id="producto1">
                                     <div class="contenedor-foto">
-                                        <img id="imagenItem" src="../../img/productos/bolsa-precorte.jpg"
+                                        <img id="imagenItem" src="../../img/productos/sacos-agricolas.png"
                                             alt="Agrícola">
                                     </div>
-                                    <p class="descripcion" id="#">AGRÍCOLA</p>
+                                    <p class="descripcion" id="#">SACO AGRÍCOLA</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -84,10 +86,10 @@
                             <div class="fila">
                                 <div class="item" id="producto1">
                                     <div class="contenedor-foto">
-                                        <img id="imagenItem" src="../../img/productos/bolsa-multiusos.jpg"
+                                        <img id="imagenItem" src="../../img/productos/sacos-agricolas-2.png"
                                             alt="Industrial">
                                     </div>
-                                    <p class="descripcion" id="#">INDUSTRIAL</p>
+                                    <p class="descripcion" id="#">SACO INDUSTRIAL</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -106,7 +108,7 @@
                                         <img id="imagenItem" src="../../img/productos/shopping-bag-ferretero.jpg"
                                             alt="Fibra natural">
                                     </div>
-                                    <p class="descripcion" id="#">FIBRA NATURAL</p>
+                                    <p class="descripcion" id="#">SACO DE FIBRA NATURAL</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -119,17 +121,19 @@
                             </div>
                         </div>
                     </div>
-                    <hr style="margin: 30px 0 30px 0;">                        
-                    <h2 class="titulos-productos">FLEXIBLES</h2>
+                    <hr style="margin: 30px 0 30px 0;">
+                    <div class="bg-titulos-productos-ocre row">
+                        <h2 class="titulos-productos">EMPAQUES FLEXIBLES</h2>
+                    </div>
                     <div class="row">
                         <div class="col">
                             <div class="fila">
                                 <div class="item" id="producto1">
                                     <div class="contenedor-foto">
-                                        <img id="imagenItem" src="../../img/productos/plastico-invernadero.jpg"
+                                        <img id="imagenItem" src="../../img/productos/laminas-impresas.png"
                                             alt="Láminas impresas">
                                     </div>
-                                    <p class="descripcion" id="#">LÁMINAS IMPRESAS</p>
+                                    <p class="descripcion" id="#">LAMINAS COEXTRUIDAS</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -145,10 +149,10 @@
                             <div class="fila">
                                 <div class="item" id="producto1">
                                     <div class="contenedor-foto">
-                                        <img id="imagenItem" src="../../img/productos/cinta-empaque.jpg"
+                                        <img id="imagenItem" src="../../img/productos/bolsa-multiusos.jpg"
                                             alt="Bolsas publicitarias">
                                     </div>
-                                    <p class="descripcion" id="#">BOLSAS PUBLICITARIAS</p>
+                                    <p class="descripcion" id="#">BOLSAS PLÁSTICAS</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -160,37 +164,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="fila">
-                                <div class="item" id="producto1">
-                                    <div class="contenedor-foto">
-                                        <img id="imagenItem" src="../../img/productos/bascula-electronica.jpg"
-                                            alt="Rollos precorte">
-                                    </div>
-                                    <p class="descripcion" id="#">ROLLOS PRECORTE</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
-                                        data-bs-target="#seleccion" id="btn-description" onclick="cargar(5)">
-                                        Descripción
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <hr style="margin: 30px 0 30px 0;">
-                    <H2 class="titulos-productos">SHOPINGBAGS</H2>
+                    <div class="bg-titulos-productos row">
+                        <h2 class="titulos-productos">SHOPINGBAGS</h2>
+                    </div>
                     <div class="row">
                         <div class="col">
                             <div class="fila">
                                 <div class="item" id="producto1">
                                     <div class="contenedor-foto">
-                                        <img id="imagenItem" src="../../img/productos/shopping-bag-ferretero.jpg"
+                                        <img id="imagenItem" src="../../img/productos/shopping-bag.png"
                                             alt="Shopingbag polipropileno">
                                     </div>
-                                    <p class="descripcion" id="#">POLIPROPILENO</p>
+                                    <p class="descripcion" id="#">SHOPINGBAG POLIPROPILENO</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -228,15 +215,10 @@
                 <div class="modal-dialog">
                     <div class="modal-content text-center">
                         <div class="modal-header">
-                            <h5 class="modal-title">Descripción del producto</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body" id="itemDetail">
                             <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            <a type="button" class="btn btn-success" href="../contacto.html">Más sobre mi</a>
                         </div>
                     </div>
                 </div>

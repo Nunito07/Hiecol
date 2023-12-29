@@ -1,0 +1,81 @@
+:root{
+    --gris: rgba(198, 194, 194, 0.5);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#bg-container{
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('/img/productos/hilos-tutoreo.png');
+}
+
+/*estilos específicos para cada imagen de fondo 
+.bg-1 {
+    background-image: linear-gradient(rgb(5, 7, 12, 50%), rgba(5, 7, 12, 50%)), url(../img/lechuga-hidroponica.jpg);
+}
+
+.bg-2 {
+    background-image: linear-gradient(rgb(5, 7, 12, 50%), rgba(5, 7, 12, 50%)), url(../img/woman-taking-out-plastic-bag.jpg);
+}
+
+.bg-3 {
+    background-image: linear-gradient(rgb(5, 7, 12, 50%), rgba(5, 7, 12, 50%)), url(../img/plastic-free-storage.jpg);
+}
+
+.bg-4 {
+    background-image: linear-gradient(rgb(5, 7, 12, 50%), rgba(5, 7, 12, 50%)), url(../img/bags-for-cereals.jpg);
+}*/
+
+main{
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#logo{
+    display: inline-block;
+    width: 280px;
+    height: auto;
+    margin-left: 15px;
+}
+
+#logo img{
+    max-width: 100%;
+}
+
+#navbarNavDropdown a{
+    font-size: 20px;
+}
+
+.img-firma img{
+    max-width: 300px;
+}
+
+@media (max-width: 514px) {
+    .img-firma img {
+        max-width: 200px;
+    }
+ }
+
+ .titulos-productos{
+    font-size: 3em;
+    font-family: 'Nunito Sans', 'Open Sans';
+    color: #40B554;
+    margin: 15px 0 20px 0;
+ }
+
+ .descripcion{
+    font-weight: bold;
+ }

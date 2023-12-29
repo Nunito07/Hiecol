@@ -15,12 +15,11 @@ body {
 #bg-container{
     height: 100vh;
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
-    transition: background-image 1s ease;
+    background-image: url('/img/productos/shopping-bag.png');
 }
 
-/*estilos específicos para cada imagen de fondo */
+/*estilos específicos para cada imagen de fondo 
 .bg-1 {
     background-image: linear-gradient(rgb(5, 7, 12, 50%), rgba(5, 7, 12, 50%)), url(../img/lechuga-hidroponica.jpg);
 }
@@ -35,7 +34,7 @@ body {
 
 .bg-4 {
     background-image: linear-gradient(rgb(5, 7, 12, 50%), rgba(5, 7, 12, 50%)), url(../img/bags-for-cereals.jpg);
-}
+}*/
 
 main{
     padding: 20px;

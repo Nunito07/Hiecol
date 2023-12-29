@@ -37,3 +37,25 @@
     cursor: pointer;
 }
 
+@media (max-width: 320px) {
+    #imgCoop{
+        text-align: center;
+        padding: 0;
+    }
+
+    #imgCoop img {
+        max-width: 304px;
+    }
+ }
+
+#imgCoop{
+    text-align: center;
+    margin: 20px auto;
+}
+
+#imgCoop img{
+    border-radius: 15px;
+    max-width: auto;
+    max-height: 510px;
+}
+

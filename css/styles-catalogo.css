@@ -7,7 +7,7 @@
     font-family: 'Nunito Sans', 'Open Sans';
 }
 
-.titulo{
+.titulo {
     font-weight: 600;
     color: #40B554;
 }
@@ -29,15 +29,15 @@
     }
 }
 
-#btn-description{
+#btn-description {
     margin-top: 20px;
 }
 
-.contenedor-foto{
+.contenedor-foto {
     padding: 15px;
 }
 
-#imagenItem{
+#imagenItem {
     max-height: 212px;
     border-radius: 15px;
     background-color: #e6e6e6;
@@ -45,24 +45,24 @@
 
 }
 
-.descripcion{
+.descripcion {
     color: #E3A241;
     font-size: 20px;
 }
 
-.titulos-productos{
+.titulos-productos {
     margin: 5px;
     color: #FFFFFF;
 }
 
-.bg-titulos-productos{
-    background: rgba(227, 162, 65, 0.5);
-    /*background: rgba(64, 181, 84, 0.5);*/
+.bg-titulos-productos {
+    /*background: rgba(227, 162, 65, 0.5);*/
+    background: rgba(64, 181, 84, 0.5);
     width: 100%;
 }
 
-.bg-titulos-productos-ocre{
-    /*background: rgba(227, 162, 65, 0.5);*/
-    background: rgba(64, 181, 84, 0.5);
+.bg-titulos-productos-ocre {
+    background: rgba(227, 162, 65, 0.5);
+    /* background: rgba(64, 181, 84, 0.5);*/
     width: 100%;
 }
